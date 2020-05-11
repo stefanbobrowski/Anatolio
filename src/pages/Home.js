@@ -11,6 +11,17 @@ import mongoIcon from "../assets/skill-icons/mongodb.svg";
 import sassIcon from "../assets/skill-icons/sass.svg";
 import nodeIcon from "../assets/skill-icons/node-dot-js.svg";
 
+import kkhLogo from "../assets/work-logos/kkh.jpg";
+import kkhdbLogo from "../assets/work-logos/kkh-db.jpg";
+import asfLogo from "../assets/work-logos/asf.png";
+import clevelandLogo from "../assets/work-logos/cleveland.png";
+import stjamesLogo from "../assets/work-logos/stjames.png";
+import setonLogo from "../assets/work-logos/seton.png";
+
+import collingwoodLogo from "../assets/work-logos/collingwood.png";
+
+import acsLogo from "../assets/work-logos/acs.png";
+
 const Home = () => {
   useEffect(() => {}, []);
 
@@ -97,7 +108,6 @@ const Home = () => {
       <section>
         <div class="content-container">
           <h2>Projects</h2>
-
           <div className="projects-container">
             <A href="/" className="project">
               <div className="project-thumb">
@@ -199,34 +209,111 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="work-section">
         <div className="content-container">
           <h2>Work</h2>
-
           <div className="works-container">
-            <div className="work">
-              <h4>Windsor High School</h4>
-              <h4>Finalsite</h4>
-              <p>This website lorem ipsum</p>
-            </div>
-            <div className="work">
-              <h4>Canadian University</h4>
-              <h4>Finalsite</h4>
-              <p>This website lorem ipsum</p>
-            </div>
-            <div className="work">
-              <h4>Design Bar</h4>
-              <h4>Kathy Kuo Home</h4>
-              <p>This website lorem ipsum</p>
-            </div>
-          </div>
-        </div>
-      </section>
+            <a
+              className="work kkh-db"
+              href="https://www.kathykuohome.com/designbar"
+              target="_blank"
+            >
+              <img src={kkhdbLogo}></img>
+              <div className="details">
+                <h5>
+                  Design Bar, <i>Kathy Kuo Home</i>
+                </h5>
+              </div>
+            </a>
+            <a
+              className="work kkh"
+              href="https://www.kathykuohome.com/"
+              target="_blank"
+            >
+              <img src={kkhLogo}></img>
+              <div className="details">
+                <h5>
+                  Kathy Kuo Home, <i>Kathy Kuo Home</i>
+                </h5>
+              </div>
+            </a>
 
-      <section>
-        <div className="content-container">
-          <h2>Contact</h2>
-          <p>Please contact me at stefanbobrowski1@gmail.com</p>
+            <a
+              className="work seton"
+              href="https://www.slshs.org/"
+              target="_blank"
+            >
+              <img src={setonLogo}></img>
+              <div className="details">
+                <h5>
+                  Seton LaSalle High School, <i>Finalsite</i>
+                </h5>
+              </div>
+            </a>
+            <a
+              className="work collingwood"
+              href="https://www.collingwood.org/"
+              target="_blank"
+            >
+              <img src={collingwoodLogo}></img>
+              <div className="details">
+                <h5>
+                  Collingwood School, <i>Finalsite</i>
+                </h5>
+              </div>
+            </a>
+            <a
+              className="work asf"
+              href="https://www.asf.edu.mx/"
+              target="_blank"
+            >
+              <img src={asfLogo}></img>
+              <div className="details">
+                <h5>
+                  The American School Foundation, <i>Finalsite</i>
+                </h5>
+              </div>
+            </a>
+
+            <a
+              className="work cleveland"
+              href="https://www.cleveland.edu/"
+              target="_blank"
+            >
+              <img src={clevelandLogo}></img>
+              <div className="details">
+                <h5>
+                  Cleveland University, <i>Finalsite</i>
+                </h5>
+              </div>
+            </a>
+
+            <a
+              className="work acs"
+              href="https://www.acs.edu.lb/index.cfm"
+              target="_blank"
+            >
+              <img src={acsLogo}></img>
+              <div className="details">
+                <h5>
+                  American Community School Beirut, <i>Finalsite</i>
+                </h5>
+              </div>
+            </a>
+
+            <a
+              className="work stjames"
+              href="https://www.stjames.edu/"
+              target="_blank"
+            >
+              <img src={stjamesLogo}></img>
+              <div className="details">
+                <h5>
+                  Saint James School, <i>Finalsite</i>
+                </h5>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
     </div>

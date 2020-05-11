@@ -75,32 +75,26 @@ h1 {
 }
 
 h2 {
-  margin-top: 2rem;
   font-size: 2rem;
 }
 
 h3 {
-  margin-top: 1.8rem;
   font-size: 1.8rem;
 }
 
 h4 {
-  margin-top: 1.6rem;
   font-size: 1.6rem;
 }
 
 h5 {
-  margin-top: 1.4rem;
   font-size: 1.4rem;
 }
 
 h6 {
-  margin-top: 1.2rem;
   font-size: 1.2rem;
 }
 
 p {
-  margin-top: 1rem;
   font-size: 1rem;
 }
 
@@ -158,8 +152,8 @@ header#site-header {
       display: flex;
 
       a {
-        width: 1.8rem;
-        margin-left: 0.75rem;
+        width: 1.4rem;
+        margin-left: 0.8rem;
 
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
           brightness(103%) contrast(103%);
@@ -379,22 +373,149 @@ header#site-header {
   }
 }
 
+.work-section {
+  background-color: $main-color;
+
+  h2 {
+    color: #fff;
+  }
+}
+
 .works-container {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 1rem;
   .work {
-    border: 1px solid black;
+    flex: 0 0 23%;
+    padding-top: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    outline: 1px solid black;
+    overflow: hidden;
+
+    @media screen and (max-width: $tablet-width) {
+      flex: 0 0 31%;
+      padding-top: 31%;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+      flex: 0 0 48%;
+      padding-top: 48%;
+    }
+
+    &.kkh {
+    }
+
+    &.kkh-db {
+      img {
+        width: 28%;
+      }
+    }
+
+    &.seton {
+      background-color: #2c562f;
+    }
+
+    &.asf {
+      background-color: #780c28;
+    }
+
+    &.acs {
+      background-color: #02253d;
+
+      img {
+        width: 35%;
+      }
+    }
+
+    &.cleveland {
+      background-color: #f1f2f2;
+    }
+
+    &.stjames {
+      background-color: #861f41;
+
+      img {
+        width: 30%;
+      }
+    }
+
+    &:hover {
+      .details {
+        bottom: 0;
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 70%;
+    }
+
+    .details {
+      position: absolute;
+      bottom: -43%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 1rem 0.5rem;
+      transition: 0.3s linear;
+
+      h5 {
+        margin: 0;
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: #fff;
+      }
+    }
   }
 }
 
 footer#site-footer {
-  background-color: $main-color;
+  background-color: #222;
 
   .footer-content {
     max-width: $desktop-width;
     margin: 0 auto;
     padding: 1rem;
-
     color: #fff;
+
+    nav#footer-nav {
+      display: flex;
+      justify-content: center;
+
+      a {
+        width: 1.4rem;
+        margin: 0rem 0.6rem 0.5rem 0.6rem;
+
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
+          brightness(103%) contrast(103%);
+
+        &:hover {
+          //purple
+          // filter: invert(40%) sepia(14%) saturate(1018%) hue-rotate(213deg) brightness(95%) contrast(81%);
+
+          //orange
+
+          filter: invert(67%) sepia(72%) saturate(2948%) hue-rotate(2deg)
+            brightness(106%) contrast(98%);
+
+          // filter: invert(75%) sepia(8%) saturate(484%) hue-rotate(332deg)  contrast(86%);
+        }
+      }
+    }
+
+    .copy {
+      text-align: center;
+      font-size: 0.75rem;
+    }
   }
 }
