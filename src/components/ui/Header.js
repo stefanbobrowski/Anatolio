@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <header id="site-header">
       <div className="header-container">
-        <a href="#" className="site-logo-container">
+        <a href="/" className="site-logo-container">
           <div className="site-logo">
             <img src={anatolioPic}></img>
           </div>

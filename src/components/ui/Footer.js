@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer id="site-footer">
       <div className="footer-content">
-        <A href="/">Stefan Bobrowski</A>
+        <a href="/">Stefan Bobrowski</a>
         <p>Full Stack Web Developer</p>
         <nav id="footer-nav">
           <a

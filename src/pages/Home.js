@@ -129,7 +129,7 @@ const Home = () => {
       </section>
 
       <section>
-        <div class="content-container">
+        <div className="content-container">
           <h2>Projects</h2>
           <div className="projects-container">
             <A className="project" href="/projects/ToDoList">

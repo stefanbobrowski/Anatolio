@@ -238,7 +238,8 @@ $cc-font: "ccFont";
     background-color: #fff;
 
     .saved-method {
-      padding: 0.5rem;
+      position: relative;
+      padding: 1rem;
       p {
         color: #fff;
       }
@@ -256,6 +257,17 @@ $cc-font: "ccFont";
 
       &.discover {
         background-color: #ff6000;
+      }
+
+      .remove-payment-method {
+        font-size: 0.8rem;
+        position: absolute;
+        top: 3px;
+        right: 3px;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
