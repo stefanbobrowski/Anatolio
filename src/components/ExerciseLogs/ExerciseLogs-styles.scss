@@ -1,0 +1,165 @@
+.exercise-logs-project {
+  .exercise-logs-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    background-color: #eee;
+
+    > div {
+      padding: 0.4rem;
+    }
+  }
+  .exercise-logs {
+    flex: 1 1 500px;
+    // max-width: 500px;
+
+    h4 {
+      margin-bottom: 1rem;
+    }
+    .exercise-log {
+      display: flex;
+      position: relative;
+      border: 1px solid black;
+      margin-bottom: 0.6rem;
+      padding: 0.6rem;
+      border-radius: 5px;
+      box-shadow: -2px 3px 2px rgba(0, 0, 0, 0.5);
+      background-color: #fff;
+      > div {
+        // normal view or edit view
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+
+        header {
+          display: flex;
+          width: 100%;
+
+          h4 {
+            width: 100%;
+            margin-right: auto;
+          }
+
+          .controls {
+            margin-left: 0.4rem;
+            span {
+              &:hover {
+                cursor: pointer;
+                color: coral;
+              }
+
+              &:first-of-type {
+                margin-right: 0.3rem;
+              }
+            }
+          }
+        }
+
+        .log-row {
+          display: flex;
+          width: 100%;
+          border: 1px solid black;
+          border-bottom: 0;
+
+          &:nth-of-type(odd) {
+            background-color: rgb(173, 192, 211);
+          }
+
+          &:nth-of-type(even) {
+            background-color: rgb(84, 111, 138);
+          }
+
+          &:last-of-type {
+            border-bottom: 1px solid black;
+          }
+
+          label {
+            text-align: right;
+            flex: 0 0 6.1rem;
+            padding: 0.4rem;
+            font-size: 0.9rem;
+            font-weight: bold;
+            border-right: 1px solid black;
+          }
+
+          p {
+            margin-bottom: 0px;
+            padding: 0.4rem;
+            overflow-wrap: break-word;
+          }
+        }
+      }
+
+      .edit-mode {
+        .edit-exercise-log {
+          width: 100%;
+
+          input,
+          textarea {
+            width: 100%;
+            font-size: 1rem;
+            padding: 0.2rem;
+          }
+
+          textarea {
+            resize: none;
+            height: 100%;
+            min-height: 170px;
+            max-height: 300px;
+          }
+        }
+      }
+    }
+  }
+
+  .create-log-container {
+    flex: 0 0 40%;
+    .create-exercise-log {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      margin-top: 1rem;
+      padding: 0.6rem;
+      border-radius: 5px;
+      box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.5);
+      background-color: rgb(173, 192, 211);
+
+      > div {
+        display: flex;
+        label {
+          flex: 0 0 6.2rem;
+          padding: 0.2rem;
+          font-size: 0.8rem;
+          text-align: right;
+          font-weight: bold;
+        }
+
+        input {
+          width: 100%;
+          padding: 0.4rem;
+        }
+
+        textarea {
+          width: 100%;
+          height: 100px;
+          resize: none;
+        }
+      }
+
+      button {
+        margin-top: 0.5rem;
+        align-self: flex-end;
+        padding: 0.4rem;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 0.6rem;
+      }
+    }
+  }
+}

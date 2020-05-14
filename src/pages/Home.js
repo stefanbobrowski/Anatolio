@@ -10,6 +10,7 @@ import reactIcon from "../assets/skill-icons/react.svg";
 import mongoIcon from "../assets/skill-icons/mongodb.svg";
 import sassIcon from "../assets/skill-icons/sass.svg";
 import nodeIcon from "../assets/skill-icons/node-dot-js.svg";
+import jsIcon from "../assets/skill-icons/javascript.svg";
 
 import kkhLogo from "../assets/work-logos/kkh.jpg";
 import kkhdbLogo from "../assets/work-logos/kkh-db.jpg";
@@ -22,6 +23,10 @@ import collingwoodLogo from "../assets/work-logos/collingwood.png";
 
 import acsLogo from "../assets/work-logos/acs.png";
 
+// import resumeIcon from "../assets/resume.png";
+import resumeIcon from "../assets/resume.svg";
+import resume from "../assets/SAB Resume.pdf";
+
 const Home = () => {
   useEffect(() => {}, []);
 
@@ -30,7 +35,6 @@ const Home = () => {
       <div className="page-intro">
         <div className="center-message">
           <h1>Full Stack Web Developer</h1>
-
           <p>
             I love coding with the MERN stack and learning new technologies.
           </p>
@@ -46,7 +50,7 @@ const Home = () => {
             <code>
               &emsp;<span className="property">occupation</span>
               <span className="colon">:</span>{" "}
-              <span className="string">"Full Stack Developer"</span>,
+              <span className="string">"Full Stack Web Developer"</span>,
             </code>
             <code>
               &emsp;<span className="property">specialty</span>
@@ -70,6 +74,11 @@ const Home = () => {
             <code>{"}"}</code>
           </pre>
         </div>
+
+        <a className="resume-container" href={resume} target="_blank">
+          <img src={resumeIcon} title="Resume" alt="Resume"></img>
+          <p>SAB Resume.pdf (78.3kb)</p>
+        </a>
       </div>
 
       <section className="skills-section">
@@ -78,28 +87,42 @@ const Home = () => {
             <h2>Skills</h2>
 
             <div className="skill">
-              <div className="skill-icon">
-                <img src={reactIcon} alt="react"></img>
+              <div className="skill-icon" title="React.js">
+                <img src={reactIcon} alt="React"></img>
               </div>
               <p>React</p>
             </div>
             <div className="skill">
-              <div className="skill-icon">
-                <img src={reactIcon} alt="react"></img>
-              </div>
-              <p>Express</p>
-            </div>
-            <div className="skill">
-              <div className="skill-icon">
-                <img src={nodeIcon} alt="react"></img>
+              <div className="skill-icon" title="Node.js">
+                <img src={nodeIcon} alt="Node"></img>
               </div>
               <p>Node</p>
             </div>
             <div className="skill">
-              <div className="skill-icon">
-                <img src={mongoIcon} alt="react"></img>
+              <div className="skill-icon mongodb" title="MongoDB">
+                <img src={mongoIcon} alt="MongoDb"></img>
               </div>
               <p>MongoDb</p>
+            </div>
+            <div className="skill">
+              <div className="skill-icon express" title="Express.js">
+                <div className="express-icon">
+                  <span>ex</span>
+                </div>
+              </div>
+              <p>Express</p>
+            </div>
+            <div className="skill">
+              <div className="skill-icon" title="JavaScript">
+                <img src={jsIcon} alt="JavaScript"></img>
+              </div>
+              <p>JavaScript</p>
+            </div>
+            <div className="skill">
+              <div className="skill-icon" title="Sass">
+                <img src={sassIcon} alt="Sass"></img>
+              </div>
+              <p>Sass</p>
             </div>
           </div>
         </div>
@@ -109,7 +132,25 @@ const Home = () => {
         <div class="content-container">
           <h2>Projects</h2>
           <div className="projects-container">
-            <A href="/" className="project">
+            <A className="project" href="/projects/ToDoList">
+              <div className="project-thumb">
+                <img src={toDoListThumb}></img>
+              </div>
+              <h3>To-Do List</h3>
+              <p>
+                Got things to do? My React Hooks implementation of the classic
+                To-Do List app.
+              </p>
+              <div className="skills-used">
+                <div className="skill-used" title="React.js">
+                  <img src={reactIcon}></img>
+                </div>
+                <div className="skill-used" title="Sass">
+                  <img src={sassIcon}></img>
+                </div>
+              </div>
+            </A>
+            <A href="/projects/StrawVote" className="project">
               <div className="project-thumb">
                 <img src={strawVoteThumb}></img>
               </div>
@@ -120,44 +161,17 @@ const Home = () => {
                 for free.{" "}
               </p>
               <div className="skills-used">
-                <div className="skill-used">
+                <div className="skill-used" title="React.js">
                   <img src={reactIcon}></img>
                 </div>
-                <div className="skill-used">
-                  <img src={mongoIcon}></img>
-                </div>
-                <div className="skill-used">
-                  <img src={nodeIcon}></img>
-                </div>
+
                 <div className="skill-used">
                   <img src={sassIcon}></img>
                 </div>
               </div>
             </A>
-            <div className="project">
-              <div className="project-thumb">
-                <img src={toDoListThumb}></img>
-              </div>
-              <h3>To-Do List</h3>
-              <p>
-                Got things to do? My implementation of the classic To-Do List.
-              </p>
-              <div className="skills-used">
-                <div className="skill-used">
-                  <img src={reactIcon}></img>
-                </div>
-                <div className="skill-used">
-                  <img src={mongoIcon}></img>
-                </div>
-                <div className="skill-used">
-                  <img src={nodeIcon}></img>
-                </div>
-                <div className="skill-used">
-                  <img src={sassIcon}></img>
-                </div>
-              </div>
-            </div>
-            <div className="project">
+
+            <A className="project" href="/projects/PaymentForm">
               <div className="project-thumb">
                 <img src={paymentFormThumb}></img>
               </div>
@@ -167,21 +181,15 @@ const Home = () => {
                 stack MERN app.
               </p>
               <div className="skills-used">
-                <div className="skill-used">
+                <div className="skill-used" title="React.js">
                   <img src={reactIcon}></img>
-                </div>
-                <div className="skill-used">
-                  <img src={mongoIcon}></img>
-                </div>
-                <div className="skill-used">
-                  <img src={nodeIcon}></img>
                 </div>
                 <div className="skill-used">
                   <img src={sassIcon}></img>
                 </div>
               </div>
-            </div>
-            <div className="project">
+            </A>
+            <A className="project" href="/projects/ExerciseLogs">
               <div className="project-thumb">
                 <img src={exerciseLogsThumb}></img>
               </div>
@@ -193,19 +201,25 @@ const Home = () => {
 
               <div className="skills-used">
                 <div className="skill-used">
-                  <img src={reactIcon}></img>
-                </div>
-                <div className="skill-used">
                   <img src={mongoIcon}></img>
                 </div>
+
                 <div className="skill-used">
+                  <div className="express-icon">
+                    <span>ex</span>
+                  </div>
+                </div>
+                <div className="skill-used" title="Node.js">
                   <img src={nodeIcon}></img>
+                </div>
+                <div className="skill-used" title="React.js">
+                  <img src={reactIcon}></img>
                 </div>
                 <div className="skill-used">
                   <img src={sassIcon}></img>
                 </div>
               </div>
-            </div>
+            </A>
           </div>
         </div>
       </section>

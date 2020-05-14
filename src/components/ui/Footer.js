@@ -11,10 +11,12 @@ const Footer = () => {
   return (
     <footer id="site-footer">
       <div className="footer-content">
+        <A href="/">Stefan Bobrowski</A>
+        <p>Full Stack Web Developer</p>
         <nav id="footer-nav">
           <a
             href="mailto:stefanbobrowski1@gmail.com"
-            title="Gmail - Stefan Bobrowski"
+            title="stefanbobrowski1@gmail.com"
           >
             <img src={gmailIcon} alt="Gmail"></img>
           </a>
