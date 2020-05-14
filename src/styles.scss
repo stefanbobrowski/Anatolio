@@ -36,7 +36,7 @@ $desktop-width: 1080px;
 
 // Color
 
-$main-color: rgb(27, 185, 151);
+$main-color: #1bb997;
 
 $secondary-color: #fca902;
 
@@ -111,7 +111,8 @@ img {
 }
 
 header#site-header {
-  background-color: rgb(0, 165, 128);
+  // background-color: #00a580;
+  background-color: darken($main-color, 5%);
 
   .header-container {
     display: flex;
@@ -286,29 +287,27 @@ header#site-header {
   padding: 2rem 1rem;
 }
 
-.skills-section {
-  background-color: rgba($main-color, 0.9);
-}
+// .skills-section {
+//   background-color: rgba($main-color, 0.9);
+// }
 
 .skills-section {
-  background-color: #00a580;
+  background-color: darken($main-color, 5%);
 }
 
 .skills-container {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 
   h2 {
-    margin-top: 0;
-    margin-right: 0.3rem;
+    margin: 0.3rem 0.7rem 0.3rem 0;
     color: #fff;
   }
 
   .skill {
     display: flex;
     align-items: center;
-    margin-left: 0.7rem;
+    margin: 0.3rem 0.7rem 0.3rem 0;
     padding: 0.4rem 0.7rem;
     background-color: lighten($main-color, 50%);
     border-radius: 6px;
