@@ -4,7 +4,7 @@ const cors = require("cors");
 const dotenv = require("dotenv").config();
 
 const exercisesRouter = require("./routes/exercises.js");
-const sendRouter = require("./routes/send.js");
+const signUpRouter = require("./routes/sign-up.js");
 
 const app = express();
 const DB_URL = process.env.DB_URL || "localhost:27017";
@@ -31,7 +31,7 @@ connection.on("error", () => {
 });
 
 app.use("/exercises", exercisesRouter);
-app.use("/contact", sendRouter);
+app.use("/sign-up", signUpRouter);
 
 app.listen(SERVER_PORT, () => {
   console.log("Server listening on port " + SERVER_PORT);

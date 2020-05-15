@@ -108,7 +108,7 @@ const ExerciseLogs = () => {
   };
 
   return (
-    <div className="project exercise-logs-project">
+    <div className="project-page exercise-logs-project">
       <h1>Exercise Logs</h1>
       <p>
         A MERN app for tracking exercises. Create, Edit, and Delete exercises

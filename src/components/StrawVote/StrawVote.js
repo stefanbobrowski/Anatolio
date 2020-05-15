@@ -51,7 +51,7 @@ const StrawVote = () => {
   }, [createVote]);
 
   return (
-    <div className="project straw-vote-project">
+    <div className="project-page straw-vote-project">
       <h1>Straw Vote</h1>
       <p>
         Straw Vote is the best place to create instant, real-time votes for

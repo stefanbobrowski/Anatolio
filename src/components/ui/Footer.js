@@ -11,8 +11,12 @@ const Footer = () => {
   return (
     <footer id="site-footer">
       <div className="footer-content">
-        <a href="/">Stefan Bobrowski</a>
-        <p>Full Stack Web Developer</p>
+        <div className="footer-title">
+          <a href="/">Stefan Bobrowski</a>{" "}
+          <span className="special-dot">⚪</span>
+          <p>Full Stack Web Developer</p>
+        </div>
+
         <nav id="footer-nav">
           <a
             href="mailto:stefanbobrowski1@gmail.com"

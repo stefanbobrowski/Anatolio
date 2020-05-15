@@ -121,7 +121,7 @@ const ToDoList = () => {
   };
 
   return (
-    <div className="project todo-project">
+    <div className="project-page todo-project">
       <h1 className="page-header">To-Do List</h1>
       <p>My react hooks implementation of the classic to-do list.</p>
       <section className="todos-container">

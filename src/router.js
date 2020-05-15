@@ -10,6 +10,7 @@ import PaymentForm from "./components/PaymentForm/PaymentForm.js";
 import ToDoList from "./components/ToDoList/ToDoList.js";
 import StrawVote from "./components/StrawVote/StrawVote.js";
 import ExerciseLogs from "./components/ExerciseLogs/ExerciseLogs.js";
+import SignUp from "./components/SignUp/SignUp.js";
 
 const routes = {
   "/": () => <Home />,
@@ -18,6 +19,7 @@ const routes = {
   "/projects/PaymentForm": () => <PaymentForm />,
   "/projects/StrawVote": () => <StrawVote />,
   "/projects/ExerciseLogs": () => <ExerciseLogs />,
+  "/projects/SignUp": () => <SignUp />,
 };
 
 export default routes;

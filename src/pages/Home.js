@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { A } from "hookrouter";
 
-import projectThumb from "../assets/StefanBobrowski.png";
 import exerciseLogsThumb from "../assets/project-thumbs/exercise-logs.svg";
 import strawVoteThumb from "../assets/project-thumbs/straw-vote.svg";
 import toDoListThumb from "../assets/project-thumbs/to-do-list.svg";
 import paymentFormThumb from "../assets/project-thumbs/payment-form.svg";
+import signUpThumb from "../assets/project-thumbs/sign-up.svg";
 import reactIcon from "../assets/skill-icons/react.svg";
 import mongoIcon from "../assets/skill-icons/mongodb.svg";
 import sassIcon from "../assets/skill-icons/sass.svg";
@@ -36,7 +36,8 @@ const Home = () => {
         <div className="center-message">
           <h1>Full Stack Web Developer</h1>
           <p>
-            I love coding with the MERN stack and learning new technologies.
+            I enjoy coding with the MERN stack and creating exciting
+            applications.
           </p>
         </div>
 
@@ -128,7 +129,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
+      <section className="projects-section">
         <div className="content-container">
           <h2>Projects</h2>
           <div className="projects-container">
@@ -150,26 +151,6 @@ const Home = () => {
                 </div>
               </div>
             </A>
-            <A href="/projects/StrawVote" className="project">
-              <div className="project-thumb">
-                <img src={strawVoteThumb}></img>
-              </div>
-              <h3>Straw Vote</h3>
-              <p>
-                {" "}
-                Straw Vote is the best place to create instant, real-time polls
-                for free.{" "}
-              </p>
-              <div className="skills-used">
-                <div className="skill-used" title="React.js">
-                  <img src={reactIcon}></img>
-                </div>
-
-                <div className="skill-used">
-                  <img src={sassIcon}></img>
-                </div>
-              </div>
-            </A>
 
             <A className="project" href="/projects/PaymentForm">
               <div className="project-thumb">
@@ -177,8 +158,8 @@ const Home = () => {
               </div>
               <h3>Payment Form</h3>
               <p>
-                Create, Read, Update, and Delete payment methods in this full
-                stack MERN app.
+                Create, Read, Update, and Delete payment methods in this React
+                app.
               </p>
               <div className="skills-used">
                 <div className="skill-used" title="React.js">
@@ -215,6 +196,58 @@ const Home = () => {
                 <div className="skill-used" title="React.js">
                   <img src={reactIcon}></img>
                 </div>
+                <div className="skill-used">
+                  <img src={sassIcon}></img>
+                </div>
+              </div>
+            </A>
+            <A className="project" href="/projects/SignUp">
+              <div className="project-thumb">
+                <img src={signUpThumb}></img>
+              </div>
+              <h3>SignUp</h3>
+              <p>
+                A full stack MERN app for signing your name. Make your mark on
+                the web.
+              </p>
+
+              <div className="skills-used">
+                <div className="skill-used">
+                  <img src={mongoIcon}></img>
+                </div>
+
+                <div className="skill-used">
+                  <div className="express-icon">
+                    <span>ex</span>
+                  </div>
+                </div>
+                <div className="skill-used" title="Node.js">
+                  <img src={nodeIcon}></img>
+                </div>
+                <div className="skill-used" title="React.js">
+                  <img src={reactIcon}></img>
+                </div>
+                <div className="skill-used">
+                  <img src={sassIcon}></img>
+                </div>
+              </div>
+            </A>
+
+            <A href="/projects/StrawVote" className="project">
+              <div className="project-thumb">
+                <img src={strawVoteThumb}></img>
+              </div>
+              <h3>Straw Vote</h3>
+              <p>
+                {" "}
+                Straw Vote is the best place to create instant, real-time votes
+                for free.{" "}
+              </p>
+              <div className="skills-used">
+                <div className="skill-used" title="React.js">
+                  <img src={reactIcon}></img>
+                </div>
+
                 <div className="skill-used">
                   <img src={sassIcon}></img>
                 </div>

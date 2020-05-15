@@ -171,7 +171,7 @@ const PaymentForm = () => {
   };
 
   return (
-    <div className="project payment-form-project">
+    <div className="project-page payment-form-project">
       <h1>Payment Form</h1>
       <p>
         A React app for create, adding, and deleting payment methods with form
