@@ -138,7 +138,7 @@ const ToDoList = () => {
                   <div className="checkbox" onClick={() => handleCheck(i)}>
                     <span>{t.complete ? "✔️" : ""}</span>
                   </div>
-                  <div>
+                  <div className="todo-title">
                     {t.complete ? (
                       <p>
                         <strike style={{ color: t.color }}>{t.content}</strike>
@@ -162,30 +162,36 @@ const ToDoList = () => {
       </section>
       <section className="control-container">
         <form className="create-todo-form" onSubmit={handleCreateTodo}>
-          <label>Create new ToDo</label>
-          <input
-            onChange={(e) =>
-              setTempTodo({
-                ...tempTodo,
-                content: e.target.value,
-                complete: false,
-              })
-            }
-          ></input>
-          <input
-            name="color-picker"
-            type="color"
-            defaultValue="#ffffff"
-            onChange={(e) =>
-              setTempTodo({ ...tempTodo, color: e.target.value })
-            }
-          />
-          <button>Submit ToDo</button>
+          <h5>Add a new To-Do:</h5>
+          <div className="todo-inputs">
+            <input
+              type="text"
+              onChange={(e) =>
+                setTempTodo({
+                  ...tempTodo,
+                  content: e.target.value,
+                  complete: false,
+                })
+              }
+            ></input>
+            <input
+              type="color"
+              title="To-Do color"
+              defaultValue="#ffffff"
+              onChange={(e) =>
+                setTempTodo({ ...tempTodo, color: e.target.value })
+              }
+            />
+          </div>
+
+          <button type="submit" title="Add To-Do">
+            Add To-Do
+          </button>
         </form>
         <div className="message-box">
-          <p>
+          <h5>
             To-Do's completed: {completedCount} / {todos.length}
-          </p>
+          </h5>
           <p style={{ color: message.color }}>{message.content}</p>
         </div>
       </section>
@@ -196,12 +202,12 @@ const ToDoList = () => {
           className="github-project-link"
           href="https://github.com/stefanbobrowski/ToDo"
           target="_blank"
-          title="Github"
+          title="To-Do List - Github"
         >
           <div className="github-icon">
             <img src={githubIcon} alt="Github"></img>
           </div>
-          <span>ToDo</span>
+          <span>To-Do List</span>
         </a>
       </div>
     </div>

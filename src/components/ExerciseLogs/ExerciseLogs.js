@@ -3,11 +3,12 @@ import { A } from "hookrouter";
 import "./ExerciseLogs-styles.scss";
 
 const ExerciseLogs = () => {
-  //  // const [apiURI, setApiUri] = useState(
-  //     "https://stefanbobrowski.com/api/exercise-logs"
-  //   );
+  // const [apiURI, setApiUri] = useState("http://localhost:4000");
 
-  const [apiURI, setApiUri] = useState("http://localhost:4000");
+  const [apiURI, setApiUri] = useState(
+    "https://stefanbobrowski.com/api/exercise-logs"
+  );
+
   const [exerciseLogs, setExerciseLogs] = useState([]);
   const [createLog, setCreateLog] = useState({});
   const [editLog, setEditLog] = useState({});
@@ -27,7 +28,7 @@ const ExerciseLogs = () => {
     e.preventDefault();
     console.log("creating exercise...");
     try {
-      const response = await fetch(`${apiURI}/exercises/create`, {
+      const response = await fetch(`${apiURI}/create`, {
         method: "POST",
         headers: {
           Accept: "application/json, text/plain, */*",
@@ -49,7 +50,7 @@ const ExerciseLogs = () => {
   const readExerciseLogs = async () => {
     console.log("Reading Exercise Logs...");
     try {
-      const response = await fetch(`${apiURI}/exercises/`, {
+      const response = await fetch(`${apiURI}/`, {
         method: "GET",
       });
       const res = await response.json();
@@ -64,7 +65,7 @@ const ExerciseLogs = () => {
   const updateExerciseLog = async (id) => {
     console.log(editLog);
     try {
-      const response = await fetch(`${apiURI}/exercises/update/` + id, {
+      const response = await fetch(`${apiURI}/update/` + id, {
         method: "POST",
         headers: {
           Accept: "application/json, text/plain, */*",
@@ -86,7 +87,7 @@ const ExerciseLogs = () => {
     let confirm = window.confirm("Really delete this log?");
     if (confirm) {
       try {
-        const response = await fetch(`${apiURI}/exercises/` + id, {
+        const response = await fetch(`${apiURI}/` + id, {
           method: "DELETE",
         });
         const res = await response.json();

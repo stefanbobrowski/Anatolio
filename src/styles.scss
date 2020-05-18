@@ -110,6 +110,15 @@ img {
   width: 100%;
 }
 
+input {
+  height: 2rem;
+  margin: 0 0.4rem 0.4rem 0;
+  padding: 0.2rem 0.4rem;
+  border: 1px solid #444;
+  border-radius: 0;
+  font-size: 1.2rem;
+}
+
 #App {
   display: flex;
   flex-direction: column;
@@ -634,15 +643,15 @@ footer#site-footer {
 }
 
 .code-container {
-  margin: 1rem 0;
+  margin: 3rem 0;
   .github-project-link {
     display: inline-flex;
     align-items: stretch;
     text-decoration: none;
+    margin: 1rem;
 
     &:hover {
       .github-icon {
-        background-color: #222;
       }
       span {
         top: 1px;
