@@ -1,0 +1,57 @@
+.sign-up-project {
+}
+
+.two-col {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.sign-up-container {
+  flex: 0 1 auto;
+  display: inline-flex;
+  justify-content: center;
+  margin-right: 2rem;
+  padding: 0.6rem;
+  background-color: #fff;
+
+  form {
+    > div {
+      p {
+        text-align: center;
+        margin: 0 0 0.5rem 0;
+      }
+      input {
+        padding: 0.3rem;
+        margin-left: 0.5rem;
+      }
+    }
+
+    button {
+      display: block;
+      margin: 1rem auto;
+      padding: 0.5rem 1rem;
+      border: 1px solid black;
+      background-color: #fff;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #eee;
+      }
+    }
+  }
+}
+
+.sign-up-list-container {
+  flex: 0 1 50%;
+  padding: 1rem;
+  border: 1px solid black;
+
+  .sign-up-list {
+    margin: 0.7rem 0;
+    p {
+      overflow-wrap: break-word;
+      padding: 0.2rem 0.4rem;
+      border-bottom: 2px solid #111;
+    }
+  }
+}
