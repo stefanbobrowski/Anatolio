@@ -2,14 +2,12 @@ import React, { useState, useEffect } from "react";
 import "./SignUp-styles.scss";
 
 const SignUp = () => {
-  // const [apiURI, setApiUri] = useState("http://localhost:4000");
-
+  // const [apiURI, setApiUri] = useState("http://localhost:4000/api/sign-up");
   const [apiURI, setApiUri] = useState(
     "https://stefanbobrowski.com/api/sign-up"
   );
 
   const [signUpList, setSignUpList] = useState([]);
-
   const [newSignUp, setNewSignUp] = useState({});
 
   useEffect(() => {
@@ -23,17 +21,18 @@ const SignUp = () => {
         method: "GET",
       });
       const res = await response.json();
-      console.log(res);
+      console.log("Signed by:", res);
       setSignUpList(res);
     } catch (err) {
       console.log(err);
     }
   };
 
-  const createSignUp = async () => {
+  const createSignUp = async (e) => {
     console.log(newSignUp);
     console.log(JSON.stringify(newSignUp));
 
+    e.target.value = null;
     try {
       const response = await fetch(`${apiURI}/create`, {
         method: "POST",
@@ -55,16 +54,14 @@ const SignUp = () => {
   return (
     <div className="project-page sign-up-project">
       <h1>SignUp</h1>
-      <p>
-        A full stack MERN app for signing your name. Make your mark on the web.
-      </p>
+      <p>A full stack MERN application for signing a piece of paper.</p>
 
       <div className="two-col">
         <section className="sign-up-container">
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              createSignUp();
+              createSignUp(e);
             }}
           >
             <div>
@@ -83,12 +80,20 @@ const SignUp = () => {
         {/* <div>{newSignUp}</div> */}
 
         <section className="sign-up-list-container">
-          <h3>Signed by:</h3>
-          <div className="sign-up-list">
-            {signUpList.map((s, i) => (
-              <p key={i}>{s.name}</p>
-            ))}
+          <div className="punch-holes">
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
+          {/* <h3>Signed by:</h3> */}
+          <ul className="sign-up-list">
+            {signUpList.map((s, i) => (
+              <li key={i}>{s.name}</li>
+            ))}
+            <li>
+              <p></p>
+            </li>
+          </ul>
         </section>
       </div>
     </div>
