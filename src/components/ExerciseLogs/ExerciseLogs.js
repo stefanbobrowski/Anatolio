@@ -112,8 +112,8 @@ const ExerciseLogs = () => {
     <div className="project-page exercise-logs-project">
       <h1>Exercise Logs</h1>
       <p>
-        A MERN app for tracking exercises. Create, Edit, and Delete exercises
-        from the database.
+        Create, Read, Update, and Delete your own <i>Exercise Logs</i> in this
+        full stack MERN application.
       </p>
       <section className="exercise-logs-container">
         <div className="create-log-container">

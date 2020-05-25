@@ -36,8 +36,8 @@ const Home = () => {
         <div className="center-message">
           <h1>Full Stack Web Developer</h1>
           <p>
-            I enjoy coding with the MERN stack and creating exciting
-            applications.
+            I enjoy coding with the MERN stack, working on exciting
+            applications, and learning new technologies.
           </p>
         </div>
 
@@ -45,7 +45,8 @@ const Home = () => {
           <pre>
             <code>
               <span className="const">const</span>{" "}
-              <span className="const-name">Stefan</span> = {"{"}
+              <span className="const-name">Stefan</span>{" "}
+              <span className="equals">{"="}</span> {"{"}
             </code>
 
             <code>
@@ -158,14 +159,14 @@ const Home = () => {
               </div>
               <h3>Payment Form</h3>
               <p>
-                Create, Read, Update, and Delete payment methods in this React
-                app.
+                Use this dynamic payment form with validation to add payment
+                methods to your wallet.
               </p>
               <div className="skills-used">
                 <div className="skill-used" title="React.js">
                   <img src={reactIcon}></img>
                 </div>
-                <div className="skill-used">
+                <div className="skill-used" title="Sass">
                   <img src={sassIcon}></img>
                 </div>
               </div>
@@ -176,9 +177,13 @@ const Home = () => {
               </div>
               <h3>Exercise Logs</h3>
               <p>
+                Create, Read, Update, and Delete your own <i>Exercise Logs</i>{" "}
+                in this full stack MERN application.
+              </p>
+              {/* <p>
                 Track your fitness with <i>Exercise Logs</i>, small check-ins of
                 your exercises with personal stats.{" "}
-              </p>
+              </p> */}
 
               <div className="skills-used">
                 <div className="skill-used">
@@ -186,7 +191,7 @@ const Home = () => {
                 </div>
 
                 <div className="skill-used">
-                  <div className="express-icon">
+                  <div className="express-icon" title="Express.js">
                     <span>ex</span>
                   </div>
                 </div>
@@ -196,7 +201,7 @@ const Home = () => {
                 <div className="skill-used" title="React.js">
                   <img src={reactIcon}></img>
                 </div>
-                <div className="skill-used">
+                <div className="skill-used" title="Sass">
                   <img src={sassIcon}></img>
                 </div>
               </div>
@@ -207,8 +212,8 @@ const Home = () => {
               </div>
               <h3>SignUp</h3>
               <p>
-                A full stack MERN app for signing your name. Make your mark on
-                the web.
+                A full stack MERN application for signing a piece of paper.
+                Everyone sign up!
               </p>
 
               <div className="skills-used">
@@ -217,7 +222,7 @@ const Home = () => {
                 </div>
 
                 <div className="skill-used">
-                  <div className="express-icon">
+                  <div className="express-icon" title="Express.js">
                     <span>ex</span>
                   </div>
                 </div>
@@ -227,7 +232,7 @@ const Home = () => {
                 <div className="skill-used" title="React.js">
                   <img src={reactIcon}></img>
                 </div>
-                <div className="skill-used">
+                <div className="skill-used" title="Sass">
                   <img src={sassIcon}></img>
                 </div>
               </div>
@@ -248,7 +253,7 @@ const Home = () => {
                   <img src={reactIcon}></img>
                 </div>
 
-                <div className="skill-used">
+                <div className="skill-used" title="Sass">
                   <img src={sassIcon}></img>
                 </div>
               </div>

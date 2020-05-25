@@ -57,6 +57,7 @@ const StrawVote = () => {
         Straw Vote is the best place to create instant, real-time votes for
         free.
       </p>
+      <h6>! Under construction !</h6>
       <section className="straw-vote-container">
         <h3>{votes.voteName}</h3>
         <section id="straw-graph">

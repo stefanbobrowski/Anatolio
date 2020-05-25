@@ -54,7 +54,10 @@ const SignUp = () => {
   return (
     <div className="project-page sign-up-project">
       <h1>SignUp</h1>
-      <p>A full stack MERN application for signing a piece of paper.</p>
+      <p>
+        A full stack MERN application for signing a piece of paper. Everyone
+        sign up!
+      </p>
 
       <div className="two-col">
         <section className="sign-up-container">

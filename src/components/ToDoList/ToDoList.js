@@ -123,7 +123,10 @@ const ToDoList = () => {
   return (
     <div className="project-page todo-project">
       <h1 className="page-header">To-Do List</h1>
-      <p>My react hooks implementation of the classic to-do list.</p>
+      <p>
+        Got things to do? My React Hooks implementation of the classic To-Do
+        List app.
+      </p>
       <section className="todos-container">
         {todos.length ? (
           <div className="todos">

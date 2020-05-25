@@ -133,7 +133,7 @@ const PaymentForm = () => {
       ) {
         setPaymentValid({ ...paymentValid, nameValid: "✔️" });
       } else {
-        setPaymentValid({ ...paymentValid, nameValid: "invalid" });
+        setPaymentValid({ ...paymentValid, nameValid: "❌" });
       }
     }
   };
@@ -174,13 +174,14 @@ const PaymentForm = () => {
     <div className="project-page payment-form-project">
       <h1>Payment Form</h1>
       <p>
-        A React app for create, adding, and deleting payment methods with form
-        validation.
+        {" "}
+        Use this dynamic payment form with validation to add payment methods to
+        your wallet.
       </p>
 
       <div className="two-col-container">
         <section className="add-card-container">
-          <h2>Add a Credit Card:</h2>
+          <h4>Add a Credit Card:</h4>
 
           <form id="add-card">
             <div className="select-payment-type">
@@ -279,7 +280,9 @@ const PaymentForm = () => {
         </section>
 
         <section className="saved-methods">
-          <h4>Saved Payment Methods:</h4>
+          <h4>Wallet:</h4>
+
+          {savedMethods.length == 0 ? <p>(Wallet empty)</p> : <p></p>}
 
           {savedMethods.map((s, i) => (
             <div className={`saved-method ${s.type}`} key={i}>
