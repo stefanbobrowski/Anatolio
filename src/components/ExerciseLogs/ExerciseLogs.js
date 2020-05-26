@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { A } from "hookrouter";
 import "./ExerciseLogs-styles.scss";
+import ELlogo from "./assets/exercise-logo.png";
 
 const ExerciseLogs = () => {
   // const [apiURI, setApiUri] = useState("http://localhost:4000");
@@ -110,18 +111,26 @@ const ExerciseLogs = () => {
 
   return (
     <div className="project-page exercise-logs-project">
-      <h1>Exercise Logs</h1>
+      <div className="logo-container">
+        <h1>Exercise Logs </h1>
+        <div className="exercise-logo">
+          <img src={ELlogo} title="Exercise Logs" alt="Exercise Logs"></img>
+        </div>
+      </div>
+
       <p>
         Create, Read, Update, and Delete your own <i>Exercise Logs</i> in this
         full stack MERN application.
       </p>
+
       <section className="exercise-logs-container">
         <div className="create-log-container">
           <h4>Create exercise log</h4>
           <form className="create-exercise-log" onSubmit={createExerciseLog}>
             <div>
-              <label>Exercise Name:</label>
+              <label>Exercise:</label>
               <input
+                maxLength="30"
                 onChange={(e) =>
                   setCreateLog({ ...createLog, exerciseName: e.target.value })
                 }
@@ -131,6 +140,7 @@ const ExerciseLogs = () => {
             <div>
               <label>Description:</label>
               <textarea
+                maxLength="150"
                 onChange={(e) =>
                   setCreateLog({ ...createLog, description: e.target.value })
                 }
@@ -139,18 +149,20 @@ const ExerciseLogs = () => {
             <div>
               <label>Duration:</label>
               <input
+                maxLength="4"
                 onChange={(e) =>
                   setCreateLog({ ...createLog, duration: e.target.value })
                 }
               ></input>
             </div>
-            <button>Create Exercise Log</button>
-            <p style={{ color: "red" }}>{errorMessage}</p>
+            <button>Create Log</button>
+            <p className="error-message" style={{ color: "maroon" }}>
+              {errorMessage}
+            </p>
           </form>
         </div>
 
         <div className="exercise-logs">
-          <h4>Exercise logs:</h4>
           {exerciseLogs.map((ex, i) => (
             <div className="exercise-log" key={i} index={i}>
               {editMode.edit && editMode.exID == ex._id ? (
@@ -160,6 +172,7 @@ const ExerciseLogs = () => {
                       <h4>
                         <input
                           defaultValue={ex.exerciseName}
+                          maxLength="30"
                           onChange={(e) =>
                             setEditLog({
                               ...editLog,
@@ -193,6 +206,7 @@ const ExerciseLogs = () => {
                       <label>Description:</label>
                       <textarea
                         defaultValue={ex.description}
+                        maxLength="150"
                         onChange={(e) =>
                           setEditLog({
                             ...editLog,
@@ -205,6 +219,7 @@ const ExerciseLogs = () => {
                     <div className="log-row">
                       <label>Duration:</label>
                       <input
+                        maxLength="4"
                         defaultValue={ex.duration}
                         onChange={(e) =>
                           setEditLog({
@@ -253,6 +268,7 @@ const ExerciseLogs = () => {
               )}
             </div>
           ))}
+          <h4>Exercise logs:</h4>
         </div>
       </section>
     </div>
