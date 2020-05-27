@@ -125,7 +125,7 @@ const ExerciseLogs = () => {
 
       <section className="exercise-logs-container">
         <div className="create-log-container">
-          <h4>Create exercise log</h4>
+          <h4>Create exercise log:</h4>
           <form className="create-exercise-log" onSubmit={createExerciseLog}>
             <div>
               <label>Exercise:</label>
@@ -234,7 +234,7 @@ const ExerciseLogs = () => {
               ) : (
                 <div className="normal-view">
                   <header>
-                    <h4>{ex.exerciseName}</h4>
+                    <h5>{ex.exerciseName}</h5>
                     <div className="controls">
                       <span
                         className="edit-log-button"

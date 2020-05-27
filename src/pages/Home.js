@@ -14,6 +14,8 @@ import jsIcon from "../assets/skill-icons/javascript.svg";
 
 import kkhLogo from "../assets/work-logos/kkh.jpg";
 import kkhdbLogo from "../assets/work-logos/kkh-db.jpg";
+
+import akcaLogo from "../assets/work-logos/akca.png";
 import asfLogo from "../assets/work-logos/asf.png";
 import clevelandLogo from "../assets/work-logos/cleveland.png";
 import stjamesLogo from "../assets/work-logos/stjames.png";
@@ -36,8 +38,8 @@ const Home = () => {
         <div className="center-message">
           <h1>Full Stack Web Developer</h1>
           <p>
-            I enjoy coding with the MERN stack, working on exciting
-            applications, and learning new technologies.
+            I enjoy coding with the MERN stack and working on exciting web
+            applications.
           </p>
         </div>
 
@@ -67,7 +69,8 @@ const Home = () => {
               &emsp;&emsp;<span className="string">"Clean Code"</span>,
             </code>
             <code>
-              &emsp;&emsp;<span className="string">"Thorough solutions"</span>,
+              &emsp;&emsp;
+              <span className="string">"Modern but thorough solutions"</span>,
             </code>
             <code>
               &emsp;&emsp;<span className="string">"New Technologies"</span>,
@@ -289,6 +292,20 @@ const Home = () => {
                 </h5>
               </div>
             </a>
+
+            {/* <a
+              className="work akca"
+              href="https://www.akcainc.com/
+              "
+              target="_blank"
+            >
+              <img src={akcaLogo}></img>
+              <div className="details">
+                <h5>
+                  AKCA, Inc, <i>ArchiFX</i>
+                </h5>
+              </div>
+            </a> */}
 
             <a
               className="work seton"

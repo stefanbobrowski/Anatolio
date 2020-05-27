@@ -147,9 +147,10 @@ button {
 
 header#site-header {
   // background-color: #00a580;
-  position: relative;
+  width: 100%;
+  position: fixed;
   z-index: 50;
-  background-color: rgba(darken($main-color, 10%), 0.5);
+  background-color: rgba(darken($main-color, 10%), 0.6);
 
   .header-container {
     display: flex;
@@ -158,10 +159,11 @@ header#site-header {
     width: 100%;
     max-width: $desktop-width;
     margin: 0 auto;
-    padding: 0.5rem;
+    padding: 0.3rem 1rem;
 
     .site-logo-container {
       display: inline-flex;
+      align-items: center;
 
       &:hover {
         .site-title h3 {
@@ -170,12 +172,11 @@ header#site-header {
       }
 
       .site-logo {
-        width: 3rem;
-        margin-right: 0.5rem;
+        width: 1.7rem;
+        margin-right: 0.3rem;
 
         img {
           border-radius: 50%;
-          transition: 0.2s linear;
         }
       }
 
@@ -188,7 +189,9 @@ header#site-header {
           margin: 0;
           color: #fff;
           margin: 0.2rem 0 0.2rem 0.2rem;
-          font-size: 1.1rem;
+          font-size: 1rem;
+          font-weight: 600;
+          letter-spacing: 0.02rem;
           // transition: 0.2s linear;
         }
       }
@@ -198,7 +201,7 @@ header#site-header {
       display: flex;
 
       a {
-        width: 1.4rem;
+        width: 1.2rem;
         margin-left: 0.8rem;
 
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
@@ -493,7 +496,6 @@ main#view {
   .work {
     flex: 0 0 23%;
     margin: 1%;
-
     padding-top: 23%;
     display: flex;
     justify-content: center;
@@ -603,9 +605,19 @@ footer#site-footer {
       display: flex;
       align-items: center;
 
+      a {
+        font-size: 1rem;
+      }
+
       .special-dot {
-        margin: 0 0.4rem;
-        font-size: 0.25rem;
+        position: relative;
+        top: 0.1rem;
+        margin: 0 0.5rem;
+        font-size: 0.3rem;
+      }
+
+      p {
+        font-size: 1rem;
       }
     }
 
@@ -661,7 +673,7 @@ footer#site-footer {
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem 3rem 1rem;
 
   > p {
     margin-top: 0.7rem;
@@ -669,7 +681,7 @@ footer#site-footer {
 }
 
 .code-container {
-  margin: 3rem 0;
+  margin: 3rem 0 0 0;
   .github-project-link {
     display: inline-flex;
     align-items: stretch;

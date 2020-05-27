@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="footer-title">
           <a href="/">Stefan Bobrowski</a>{" "}
           <span className="special-dot">⚪</span>
-          <p>Full Stack Web Developer</p>
+          <p>Web Developer</p>
         </div>
 
         <nav id="footer-nav">
