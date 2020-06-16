@@ -110,6 +110,17 @@ img {
   width: 100%;
 }
 
+ul,
+ol {
+  margin-left: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+ol {
+  margin-left: 1.6rem;
+}
+
 input,
 textarea {
   width: 100%;

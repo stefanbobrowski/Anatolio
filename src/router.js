@@ -11,6 +11,7 @@ import ToDoList from "./components/ToDoList/ToDoList.js";
 import StrawVote from "./components/StrawVote/StrawVote.js";
 import ExerciseLogs from "./components/ExerciseLogs/ExerciseLogs.js";
 import SignUp from "./components/SignUp/SignUp.js";
+import GlobalProvider from "./components/GlobalProvider/GlobalProvider";
 
 const routes = {
   "/": () => <Home />,
@@ -20,6 +21,7 @@ const routes = {
   "/projects/StrawVote": () => <StrawVote />,
   "/projects/ExerciseLogs": () => <ExerciseLogs />,
   "/projects/SignUp": () => <SignUp />,
+  "/projects/GlobalProvider": () => <GlobalProvider />,
 };
 
 export default routes;

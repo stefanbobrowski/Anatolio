@@ -6,6 +6,7 @@ import strawVoteThumb from "../assets/project-thumbs/straw-vote.svg";
 import toDoListThumb from "../assets/project-thumbs/to-do-list.svg";
 import paymentFormThumb from "../assets/project-thumbs/payment-form.svg";
 import signUpThumb from "../assets/project-thumbs/sign-up.svg";
+import globalProviderThumb from "../assets/project-thumbs/global-provider.svg";
 import reactIcon from "../assets/skill-icons/react.svg";
 import mongoIcon from "../assets/skill-icons/mongodb.svg";
 import sassIcon from "../assets/skill-icons/sass.svg";
@@ -137,6 +138,24 @@ const Home = () => {
         <div className="content-container">
           <h2>Projects</h2>
           <div className="projects-container">
+            <A className="project" href="/projects/GlobalProvider">
+              <div className="project-thumb">
+                <img src={globalProviderThumb}></img>
+              </div>
+              <h3>Global Provider</h3>
+              <p>
+                A scalable global state management system built with useContext
+                and useReducer.
+              </p>
+              <div className="skills-used">
+                <div className="skill-used" title="React.js">
+                  <img src={reactIcon}></img>
+                </div>
+                <div className="skill-used" title="Sass">
+                  <img src={sassIcon}></img>
+                </div>
+              </div>
+            </A>
             <A className="project" href="/projects/ToDoList">
               <div className="project-thumb">
                 <img src={toDoListThumb}></img>
@@ -156,24 +175,6 @@ const Home = () => {
               </div>
             </A>
 
-            <A className="project" href="/projects/PaymentForm">
-              <div className="project-thumb">
-                <img src={paymentFormThumb}></img>
-              </div>
-              <h3>Payment Form</h3>
-              <p>
-                Use this dynamic payment form with validation to add payment
-                methods to your wallet.
-              </p>
-              <div className="skills-used">
-                <div className="skill-used" title="React.js">
-                  <img src={reactIcon}></img>
-                </div>
-                <div className="skill-used" title="Sass">
-                  <img src={sassIcon}></img>
-                </div>
-              </div>
-            </A>
             <A className="project" href="/projects/ExerciseLogs">
               <div className="project-thumb">
                 <img src={exerciseLogsThumb}></img>
@@ -232,6 +233,25 @@ const Home = () => {
                 <div className="skill-used" title="Node.js">
                   <img src={nodeIcon}></img>
                 </div>
+                <div className="skill-used" title="React.js">
+                  <img src={reactIcon}></img>
+                </div>
+                <div className="skill-used" title="Sass">
+                  <img src={sassIcon}></img>
+                </div>
+              </div>
+            </A>
+
+            <A className="project" href="/projects/PaymentForm">
+              <div className="project-thumb">
+                <img src={paymentFormThumb}></img>
+              </div>
+              <h3>Payment Form</h3>
+              <p>
+                Use this dynamic payment form with validation to add payment
+                methods to your wallet.
+              </p>
+              <div className="skills-used">
                 <div className="skill-used" title="React.js">
                   <img src={reactIcon}></img>
                 </div>
