@@ -60,21 +60,21 @@ const Home = () => {
             <code>
               &emsp;<span className="property">specialty</span>
               <span className="colon">:</span>{" "}
-              <span className="string">"MERN Stack"</span>,
+              <span className="string">"MERN stack, React"</span>,
             </code>
             <code>
               &emsp;<span className="property">interests</span>
               <span className="colon">:</span> [
             </code>
             <code>
-              &emsp;&emsp;<span className="string">"Clean Code"</span>,
+              &emsp;&emsp;<span className="string">"Clean code"</span>,
             </code>
             <code>
               &emsp;&emsp;
               <span className="string">"Modern but thorough solutions"</span>,
             </code>
             <code>
-              &emsp;&emsp;<span className="string">"New Technologies"</span>,
+              &emsp;&emsp;<span className="string">"New technologies"</span>,
             </code>
             <code>&emsp;],</code>
             <code>{"}"}</code>
