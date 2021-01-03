@@ -1,45 +1,72 @@
 {
-  "name": "anatolio",
-  "version": "1.0.0",
-  "description": "Stefan Anatolio Bobrowski - Full Stack Web Developer",
-  "main": "index.js",
-  "scripts": {
-    "clean": "node distCleaner.js",
-    "start": "parcel src/index.html --open",
-    "prod": "npm run clean && parcel build src/index.html"
-  },
-  "keywords": [
-    "stefan",
-    "anatolio",
-    "bobrowski",
-    "full stack",
-    "web developer",
-    "coding",
-    "programming"
-  ],
-  "author": "Stefan Anatolio Bobrowski",
-  "license": "MIT",
-  "dependencies": {
-    "hookrouter": "^1.2.3",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.8.7",
-    "@babel/plugin-transform-runtime": "^7.8.3",
-    "autoprefixer": "^9.7.4",
-    "parcel-bundler": "^1.12.4",
-    "sass": "^1.26.3"
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {
-        "overrideBrowserslist": [
-          "> 1%",
-          "last 4 versions",
-          "ie >= 9"
-        ]
-      }
-    }
-  }
+	"name": "anatolio",
+	"version": "1.0.0",
+	"description": "Stefan Anatolio Bobrowski - Full Stack Web Developer",
+	"main": "index.js",
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"keywords": [
+		"stefan",
+		"anatolio",
+		"bobrowski",
+		"JavaScript",
+		"web developer",
+		"coding",
+		"programming"
+	],
+	"author": "Stefan Anatolio Bobroswki",
+	"license": "MIT",
+	"dependencies": {
+		"hookrouter": "^1.2.3",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"sass": "^1.26.3"
+	},
+	"devDependencies": {
+		"react-scripts": "^4.0.1",
+		"@babel/core": "^7.8.7",
+		"@babel/plugin-transform-runtime": "^7.8.3",
+		"autoprefixer": "^9.7.4",
+		"parcel-bundler": "^1.12.4",
+		"eslint-config-prettier": "^6.15.0",
+		"eslint-config-standard": "^16.0.2",
+		"eslint-config-standard-react": "^11.0.1",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-react": "^7.21.5",
+		"eslint-plugin-standard": "^5.0.0",
+		"prettier": "^2.2.1"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"postcss": {
+		"plugins": {
+			"autoprefixer": {
+				"overrideBrowserslist": [
+					"> 1%",
+					"last 4 versions",
+					"ie >= 9"
+				]
+			}
+		}
+	}
 }

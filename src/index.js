@@ -1,11 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { useRoutes } from "hookrouter";
-import routes from "./router";
-import Header from "./components/ui/Header";
-import Footer from "./components/ui/Footer";
-import PageNotFound from "./pages/PageNotFound.js";
-import "./styles.scss";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { useRoutes } from 'hookrouter';
+import routes from './router';
+import Header from './components/ui/Header';
+import Footer from './components/ui/Footer';
+import PageNotFound from './pages/PageNotFound';
+import './styles.scss';
 
 const App = () => {
   const routeResult = useRoutes(routes);
@@ -19,5 +19,5 @@ const App = () => {
   );
 };
 
-const rootElement = document.getElementById("root");
+const rootElement = document.getElementById('root');
 ReactDOM.render(<App />, rootElement);
