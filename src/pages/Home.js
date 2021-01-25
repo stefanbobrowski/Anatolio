@@ -11,15 +11,6 @@ import mongoIcon from '../assets/skill-icons/mongodb.svg';
 import sassIcon from '../assets/skill-icons/sass.svg';
 import nodeIcon from '../assets/skill-icons/node-dot-js.svg';
 import jsIcon from '../assets/skill-icons/javascript.svg';
-import kkhLogo from '../assets/work-logos/kkh.jpg';
-import kkhdbLogo from '../assets/work-logos/kkh-db.jpg';
-import akcaLogo from '../assets/work-logos/akca.png';
-import asfLogo from '../assets/work-logos/asf.png';
-import clevelandLogo from '../assets/work-logos/cleveland.png';
-import stjamesLogo from '../assets/work-logos/stjames.png';
-import setonLogo from '../assets/work-logos/seton.png';
-import collingwoodLogo from '../assets/work-logos/collingwood.png';
-import acsLogo from '../assets/work-logos/acs.png';
 // import resumeIcon from "../assets/resume.png";
 import resumeIcon from '../assets/resume.svg';
 import resume from '../assets/SAB Resume.pdf';
@@ -41,34 +32,51 @@ const Home = () => {
 				<div className='code-box'>
 					<pre>
 						<code>
-							<span className='const'>const</span> <span className='const-name'>Stefan</span>{' '}
-							<span className='equals'>{'='}</span> {'{'}
+							<span className='const'>const </span> <span className='const-name'>Stefan </span>{' '}
+							<span className='equals'>{'= '}</span> {'{'}
 						</code>
 
 						<code>
 							&emsp;<span className='property'>occupation</span>
-							<span className='colon'>:</span> <span className='string'>"Web Developer"</span>,
+							<span className='colon'>: </span>{' '}
+							<span className='string'>
+								"Web Developer"<span className='comma'>,</span>
+							</span>
 						</code>
 						<code>
 							&emsp;<span className='property'>specialty</span>
-							<span className='colon'>:</span> <span className='string'>"JavaScript, React, MERN stack"</span>,
+							<span className='colon'>: </span>{' '}
+							<span className='string'>
+								"JavaScript, React, Redux Saga, Recoil, Node, MongoDB, CSS"<span className='comma'>,</span>
+							</span>
 						</code>
 						<code>
 							&emsp;<span className='property'>interests</span>
-							<span className='colon'>:</span> [
-						</code>
-						<code>
-							&emsp;&emsp;<span className='string'>"Clean code"</span>,
+							<span className='colon'>: </span>[
 						</code>
 						<code>
 							&emsp;&emsp;
-							<span className='string'>"Modern but thorough solutions"</span>,
+							<span className='string'>
+								"Clean and performant code"<span className='comma'>,</span>
+							</span>
 						</code>
 						<code>
-							&emsp;&emsp;<span className='string'>"New technologies"</span>,
+							&emsp;&emsp;
+							<span className='string'>
+								"Modern but thorough solutions"<span className='comma'>,</span>
+							</span>
 						</code>
 						<code>
-							&emsp;&emsp;<span className='string'>"Content delivery"</span>,
+							&emsp;&emsp;
+							<span className='string'>
+								"New technologies"<span className='comma'>,</span>
+							</span>
+						</code>
+						<code>
+							&emsp;&emsp;
+							<span className='string'>
+								"Happy users"<span className='comma'>,</span>
+							</span>
 						</code>
 						<code>&emsp;],</code>
 						<code>{'}'}</code>
