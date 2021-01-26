@@ -30,12 +30,13 @@ const StrawVote = () => {
 		const newVotes = { ...votes };
 		newVotes.straws[i].strawCount++;
 		setVotes(newVotes);
-		setTotalVotes(totalVotes + 1);
+		setTotalVotes(parseInt(totalVotes) + 1);
 	};
 
 	const handleCreateVote = () => {
 		setVotes(createVote);
 		setCreateVote(defaultCreateVote);
+		setTotalVotes(0);
 	};
 
 	const handleAddStraw = () => {
@@ -52,6 +53,10 @@ const StrawVote = () => {
 		console.log(createVote);
 	}, [createVote]);
 
+	useEffect(() => {
+		console.log('votes change', votes);
+	}, [votes]);
+
 	return (
 		<div className='project-page straw-vote-project'>
 			<h1>Straw Vote</h1>
@@ -61,7 +66,7 @@ const StrawVote = () => {
 				<h3>{votes.voteName}</h3>
 				<section id='straw-graph'>
 					{votes.straws.map((c, i) => (
-						<div className='graph-row'>
+						<div className='graph-row' key={i}>
 							<span className='straw-name'>{c.strawName}</span>
 							<div
 								className='straw'
@@ -72,7 +77,7 @@ const StrawVote = () => {
 									backgroundColor: c.color,
 								}}></div>
 							<span className='straw-votes'>
-								{c.strawCount} ({Math.round((c.strawCount / totalVotes) * 100)}
+								{c.strawCount}({Math.round((c.strawCount / totalVotes) * 100)}
 								%)
 							</span>
 						</div>
@@ -109,7 +114,7 @@ const StrawVote = () => {
 					</div>
 
 					{createVote.straws.map((s, i) => (
-						<div>
+						<div key={i}>
 							<span>Straw {i}:</span>
 							<input
 								onChange={(e) => {
