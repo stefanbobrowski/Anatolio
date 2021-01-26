@@ -2,12 +2,6 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState, useEffect } from 'react';
 import { A } from 'hookrouter';
-
-import americanexpress from './assets/americanexpress.svg';
-import visa from './assets/visa.svg';
-import mastercard from './assets/mastercard.svg';
-import discover from './assets/discover.svg';
-import paypal from './assets/paypal.svg';
 import chip from './assets/chip.jpg';
 import './PaymentForm-styles.scss';
 
@@ -78,12 +72,14 @@ const PaymentForm = () => {
 
 	const handleAddExp = (d) => {
 		const valueJustDigits = d.replace(/\D/g, '');
+
 		if (valueJustDigits === '') {
 			setAddACard({ ...addACard, exp: '' });
 		} else {
 			d = valueJustDigits.match(/\d{1,2}/g).join('/');
 
-			const firstNum = d.slice(0, 1);
+			const firstNum = parseInt(d.slice(0, 1));
+
 			if (firstNum === 0 || firstNum === 1) {
 				const dateParts = d.split('/');
 
@@ -94,6 +90,7 @@ const PaymentForm = () => {
 							return;
 						}
 					}
+
 					setAddACard({ ...addACard, exp: d });
 				}
 
@@ -186,10 +183,9 @@ const PaymentForm = () => {
 									className={`payment-type ${value ? 'selected' : ''}`}
 									key={i}
 									onClick={() => handleSelectPaymentType(key)}>
-									<img src={require(`./assets/${key}.svg`)} alt='payment type'></img>
+									<img src={process.env.PUBLIC_URL + `/PaymentForm/${key}.svg`} alt='payment type'></img>
 
 									{value ? <p className='selected-name'>{key}</p> : <></>}
-									{/* <p>{key}</p> */}
 								</div>
 							))}
 
@@ -261,7 +257,10 @@ const PaymentForm = () => {
 						</div>
 						<div className='preview-bottom'>
 							<p className='preview-name'>{addACard.name}</p>
-							<img className='preview-payment-logo' src={require(`./assets/${selectedType}.svg`)} alt='preview'></img>
+							<img
+								className='preview-payment-logo'
+								src={process.env.PUBLIC_URL + `/PaymentForm/${selectedType}.svg`}
+								alt='preview'></img>
 						</div>
 					</div>
 					<div className='add-payment-button'>
