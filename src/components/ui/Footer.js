@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { A, usePath } from 'hookrouter';
 
-import anatolioPic from '../../assets/StefanBobrowski.png';
 import githubIcon from '../../assets/social-links/github.svg';
 import stackoverflowIcon from '../../assets/social-links/stackoverflow.svg';
 import linkedinIcon from '../../assets/social-links/linkedin.svg';

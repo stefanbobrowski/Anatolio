@@ -37,11 +37,12 @@ $desktop-width: 1080px;
 
 // Color
 
-$main-color: #1bb997;
-$main-color: #3057e1;
+// $main-color: #1bb997;
+// $main-color: #3057e1;
 $main-color: #2066a8;
 
-$secondary-color: #fca902;
+// $secondary-color: #fca902;
+$secondary-color: #02fc9c;
 
 html {
 	box-sizing: border-box;
@@ -220,7 +221,7 @@ header#site-header {
 				filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 
 				&:hover {
-					filter: invert(67%) sepia(72%) saturate(2948%) hue-rotate(2deg) brightness(110%) contrast(98%);
+					filter: invert(86%) sepia(17%) saturate(7429%) hue-rotate(97deg) brightness(100%) contrast(98%);
 				}
 			}
 		}
@@ -315,7 +316,7 @@ main#view {
 
 	&:hover {
 		img {
-			filter: invert(67%) sepia(72%) saturate(2948%) hue-rotate(2deg) brightness(110%) contrast(98%);
+			filter: invert(86%) sepia(17%) saturate(7429%) hue-rotate(97deg) brightness(100%) contrast(98%);
 		}
 		p {
 			color: $secondary-color;
@@ -364,8 +365,14 @@ main#view {
 		align-items: center;
 		margin: 0.3rem 0.7rem 0.3rem 0;
 		padding: 0.4rem 0.7rem;
-		background-color: #fff;
 		border-radius: 5px;
+		box-shadow: none;
+		background-color: #fff;
+		transition: box-shadow 0.2s ease;
+
+		&:hover {
+			box-shadow: 0px 0px 0px 3px rgba($secondary-color, 0.9);
+		}
 
 		.skill-icon {
 			width: 1.5rem;
@@ -417,6 +424,7 @@ main#view {
 		padding: 1.3rem 1rem;
 		margin: 1%;
 		text-align: center;
+		transition: 0.2s ease;
 
 		@media screen and (max-width: $tablet-width) {
 			flex: 0 0 48%;
@@ -429,7 +437,7 @@ main#view {
 		}
 
 		&:hover {
-			background-color: rgba($main-color, 0.42);
+			background-color: rgba($main-color, 0.5);
 		}
 
 		.project-thumb {
@@ -554,7 +562,7 @@ main#view {
 			width: 100%;
 			background-color: rgba(0, 0, 0, 0.8);
 			padding: 1rem 0.5rem;
-			transition: 0.3s linear;
+			transition: 0.2s linear;
 
 			h5 {
 				margin: 0;
