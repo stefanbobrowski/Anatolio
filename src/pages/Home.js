@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { A } from 'hookrouter';
 import exerciseLogsThumb from '../assets/project-thumbs/exercise-logs.svg';
 import strawVoteThumb from '../assets/project-thumbs/straw-vote.svg';
@@ -11,7 +11,6 @@ import mongoIcon from '../assets/skill-icons/mongodb.svg';
 import sassIcon from '../assets/skill-icons/sass.svg';
 import nodeIcon from '../assets/skill-icons/node-dot-js.svg';
 import jsIcon from '../assets/skill-icons/javascript.svg';
-// import resumeIcon from "../assets/resume.png";
 import resumeIcon from '../assets/resume.svg';
 import resume from '../assets/SAB Resume.pdf';
 import githubIcon from '../assets/social-links/github.svg';
@@ -44,10 +43,15 @@ const Home = () => {
 							</span>
 						</code>
 						<code>
-							&emsp;<span className='property'>specialty</span>
+							&emsp;<span className='property'>skills</span>
 							<span className='colon'>: </span>{' '}
 							<span className='string'>
-								"JavaScript, React, Redux Saga, Recoil, Node, MongoDB, CSS"<span className='comma'>,</span>
+								"React, Component Design Systems, Redux Saga, Recoil, TypeScript,
+							</span>
+						</code>
+						<code>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<span className='string'>
+							Git, JavaScript, Node, Express, MongoDB, SASS"<span className='comma'>,</span>
 							</span>
 						</code>
 						<code>
@@ -75,7 +79,7 @@ const Home = () => {
 						<code>
 							&emsp;&emsp;
 							<span className='string'>
-								"Happy users"<span className='comma'>,</span>
+								"Happy users"
 							</span>
 						</code>
 						<code>&emsp;],</code>
@@ -178,11 +182,6 @@ const Home = () => {
 							<p>
 								Create, Read, Update, and Delete your own <i>Exercise Logs</i> in this full stack MERN application.
 							</p>
-							{/* <p>
-                Track your fitness with <i>Exercise Logs</i>, small check-ins of
-                your exercises with personal stats.{" "}
-              </p> */}
-
 							<div className='skills-used'>
 								<div className='skill-used'>
 									<img src={mongoIcon} alt='MongoDB'></img>

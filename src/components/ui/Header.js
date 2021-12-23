@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { A, usePath } from 'hookrouter';
-
+import React, { useEffect } from 'react';
+import { usePath } from 'hookrouter';
 import anatolioPic from '../../assets/StefanBobrowski.jpg';
 import githubIcon from '../../assets/social-links/github.svg';
 import stackoverflowIcon from '../../assets/social-links/stackoverflow.svg';
@@ -9,12 +8,6 @@ import gmailIcon from '../../assets/social-links/gmail.svg';
 
 const Header = () => {
 	const path = usePath();
-
-	// const [activeLink, setActiveLink] = useState("/");
-	// useEffect(() => {
-	//   console.log(path);
-	//   setActiveLink(path);
-	// }, [path]);
 
 	useEffect(() => {
 		window.scroll({
