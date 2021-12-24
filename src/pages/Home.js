@@ -12,7 +12,7 @@ import sassIcon from '../assets/skill-icons/sass.svg';
 import nodeIcon from '../assets/skill-icons/node-dot-js.svg';
 import jsIcon from '../assets/skill-icons/javascript.svg';
 import resumeIcon from '../assets/resume.svg';
-import resume from '../assets/SAB Resume.pdf';
+import resume from '../assets/StefanB_Resume.pdf';
 import githubIcon from '../assets/social-links/github.svg';
 import stackoverflowIcon from '../assets/social-links/stackoverflow.svg';
 import linkedinIcon from '../assets/social-links/linkedin.svg';
@@ -46,14 +46,10 @@ const Home = () => {
 							&emsp;<span className='property'>skills</span>
 							<span className='colon'>: </span>{' '}
 							<span className='string'>
-								"React, Component Design Systems, Redux Saga, Recoil, TypeScript,
+								"JavaScript, React, Git, Node, Express, MongoDB, SASS"<span className='comma'>,</span>
 							</span>
 						</code>
-						<code>
-						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<span className='string'>
-							Git, JavaScript, Node, Express, MongoDB, SASS"<span className='comma'>,</span>
-							</span>
-						</code>
+					
 						<code>
 							&emsp;<span className='property'>interests</span>
 							<span className='colon'>: </span>[
@@ -89,7 +85,7 @@ const Home = () => {
 
 				<a className='resume-container' href={resume} target='_blank' rel='noreferrer'>
 					<img src={resumeIcon} title='Resume' alt='Resume'></img>
-					<p>SAB Resume.pdf (79.1 KB)</p>
+					<p>SAB Resume.pdf (142KB)</p>
 				</a>
 			</div>
 

@@ -36,12 +36,7 @@ $tablet-width: 768px;
 $desktop-width: 1080px;
 
 // Color
-
-// $main-color: #1bb997;
-// $main-color: #3057e1;
-$main-color: #2066a8;
-
-// $secondary-color: #fca902;
+$main-color: #143a61;
 $secondary-color: #02fc9c;
 
 html {
@@ -269,7 +264,6 @@ main#view {
 	text-align: left;
 	padding: 1.25rem 1.5rem;
 	background-color: #f0f0e8;
-
 	border-radius: 8px;
 
 	pre {
@@ -377,9 +371,6 @@ main#view {
 		.skill-icon {
 			width: 1.5rem;
 			margin-right: 0.4rem;
-
-			&.mongodb {
-			}
 
 			&.mongodb,
 			&.express {
