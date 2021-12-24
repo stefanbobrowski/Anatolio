@@ -1,2 +1,2 @@
 # Anatolio
-The portfolio website of full stack web developer Stefan Anatolio Bobrowski
+The portfolio website of JavaSript Web Developer Stefan Anatolio Bobrowski
