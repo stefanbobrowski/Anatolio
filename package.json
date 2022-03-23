@@ -16,7 +16,8 @@
 		"JavaScript",
 		"web developer",
 		"coding",
-		"programming"
+		"programming",
+		"react"
 	],
 	"author": "Stefan Anatolio Bobroswki",
 	"license": "MIT",
@@ -24,14 +25,12 @@
 		"hookrouter": "^1.2.3",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
+		"react-timer-hook": "^3.0.5",
 		"sass": "^1.26.3"
 	},
 	"devDependencies": {
-		"react-scripts": "^4.0.1",
 		"@babel/core": "^7.8.7",
 		"@babel/plugin-transform-runtime": "^7.8.3",
-		"autoprefixer": "^9.7.4",
-		"parcel-bundler": "^1.12.4",
 		"eslint-config-prettier": "^6.15.0",
 		"eslint-config-standard": "^16.0.2",
 		"eslint-config-standard-react": "^11.0.1",
@@ -41,7 +40,9 @@
 		"eslint-plugin-promise": "^4.2.1",
 		"eslint-plugin-react": "^7.21.5",
 		"eslint-plugin-standard": "^5.0.0",
-		"prettier": "^2.2.1"
+		"parcel-bundler": "^1.12.4",
+		"prettier": "^2.2.1",
+		"react-scripts": "^4.0.1"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
@@ -57,16 +58,5 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
-	},
-	"postcss": {
-		"plugins": {
-			"autoprefixer": {
-				"overrideBrowserslist": [
-					"> 1%",
-					"last 4 versions",
-					"ie >= 9"
-				]
-			}
-		}
 	}
 }

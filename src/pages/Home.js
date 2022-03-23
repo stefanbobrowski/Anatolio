@@ -49,7 +49,7 @@ const Home = () => {
 								"JavaScript, React, Git, Node, Express, MongoDB, SASS"<span className='comma'>,</span>
 							</span>
 						</code>
-					
+
 						<code>
 							&emsp;<span className='property'>interests</span>
 							<span className='colon'>: </span>[
@@ -74,9 +74,7 @@ const Home = () => {
 						</code>
 						<code>
 							&emsp;&emsp;
-							<span className='string'>
-								"Happy users"
-							</span>
+							<span className='string'>"Happy users"</span>
 						</code>
 						<code>&emsp;],</code>
 						<code>{'}'}</code>
@@ -139,6 +137,21 @@ const Home = () => {
 				<div className='content-container'>
 					<h2>Projects</h2>
 					<div className='projects-container'>
+						<A className='project' href='/projects/MineralMiner'>
+							<div className='project-thumb'>
+								<img src={globalProviderThumb} alt='Mineral Miner'></img>
+							</div>
+							<h3>Mineral Miner</h3>
+							<p>A Starcraft II tribute game.</p>
+							<div className='skills-used'>
+								<div className='skill-used' title='React.js'>
+									<img src={reactIcon} alt='React'></img>
+								</div>
+								<div className='skill-used' title='Sass'>
+									<img src={sassIcon} alt='SASS'></img>
+								</div>
+							</div>
+						</A>
 						<A className='project' href='/projects/GlobalProvider'>
 							<div className='project-thumb'>
 								<img src={globalProviderThumb} alt='Global Provider'></img>
