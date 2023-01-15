@@ -36,7 +36,9 @@ $tablet-width: 768px;
 $desktop-width: 1080px;
 
 // Color
-$main-color: #143a61;
+// $main-color: #143a61;
+$main-color: #105677;
+// $main-color: #0c3f56;
 $secondary-color: #02fc9c;
 
 html {
@@ -427,11 +429,46 @@ main#view {
 			padding: 1rem;
 		}
 
+		&.derision {
+			position: relative;
+			// background-color: #000;
+			background-image: url('./assets/project-thumbs/derision.png');
+			background-size: 170%;
+			background-position: 10% 50%;
+			background-repeat: no-repeat;
+
+			&:hover {
+				&:before {
+					background-color: rgba(#fff, 0.2);
+				}
+			}
+
+			&:before {
+				content: '';
+				display: block;
+				height: 100%;
+				background-color: rgba(#fff, 0.3);
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: 1;
+				transition: 0.3s ease;
+			}
+
+			> * {
+				z-index: 3;
+			}
+		}
+
 		&:hover {
-			background-color: rgba($main-color, 0.5);
+			border: 1px solid $secondary-color;
+			background-color: rgba($secondary-color, 0.1);
 		}
 
 		.project-thumb {
+			min-height: 54px;
 			width: 55px;
 			margin: 0 auto;
 		}
@@ -490,7 +527,7 @@ main#view {
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-	margin-top: 2rem;
+	margin: 0.5rem 0 1.5rem 0;
 
 	.work {
 		flex: 0 0 23%;
@@ -530,7 +567,14 @@ main#view {
 			background-color: #24292e;
 		}
 
+		&.sj {
+			img {
+				filter: none;
+			}
+		}
+
 		&:hover {
+			outline: 1px solid $secondary-color;
 			.details {
 				bottom: 0;
 			}
@@ -623,7 +667,7 @@ footer#site-footer {
 				filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 
 				&:hover {
-					filter: invert(67%) sepia(72%) saturate(2948%) hue-rotate(2deg) brightness(106%) contrast(98%);
+					filter: invert(86%) sepia(17%) saturate(7429%) hue-rotate(97deg) brightness(100%) contrast(98%);
 				}
 			}
 		}
