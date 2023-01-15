@@ -6,16 +6,20 @@ import toDoListThumb from '../assets/project-thumbs/to-do-list.svg';
 import paymentFormThumb from '../assets/project-thumbs/payment-form.svg';
 import signUpThumb from '../assets/project-thumbs/sign-up.svg';
 import globalProviderThumb from '../assets/project-thumbs/global-provider.svg';
+import mineralMinerThumb from '../components/MineralMiner/assets/minerals.jpg';
 import reactIcon from '../assets/skill-icons/react.svg';
 import mongoIcon from '../assets/skill-icons/mongodb.svg';
 import sassIcon from '../assets/skill-icons/sass.svg';
 import nodeIcon from '../assets/skill-icons/node-dot-js.svg';
 import jsIcon from '../assets/skill-icons/javascript.svg';
+import ueIcon from '../assets/skill-icons/ue.svg';
+import steamIcon from '../assets/skill-icons/steam.png';
 import resumeIcon from '../assets/resume.svg';
-import resume from '../assets/StefanB_Resume.pdf';
+import resume from '../assets/StefanResume2023.pdf';
 import githubIcon from '../assets/social-links/github.svg';
 import stackoverflowIcon from '../assets/social-links/stackoverflow.svg';
 import linkedinIcon from '../assets/social-links/linkedin.svg';
+import sjIcon from '../assets/sj.png';
 
 const Home = () => {
 	useEffect(() => {}, []);
@@ -24,8 +28,8 @@ const Home = () => {
 		<div className='page home-page'>
 			<div className='page-intro'>
 				<div className='center-message'>
-					<h1>JavaScript Web Developer</h1>
-					<p>I enjoy coding with JavaScript and working on exciting web applications.</p>
+					<h1>Software Engineer</h1>
+					<p>Web Developer, Game Developer... I enjoy building exceptional applications that help people.</p>
 				</div>
 
 				<div className='code-box'>
@@ -39,14 +43,15 @@ const Home = () => {
 							&emsp;<span className='property'>occupation</span>
 							<span className='colon'>: </span>{' '}
 							<span className='string'>
-								"Web Developer"<span className='comma'>,</span>
+								"Software Engineer, Web Developer, Game Developer"<span className='comma'>,</span>
 							</span>
 						</code>
 						<code>
 							&emsp;<span className='property'>skills</span>
 							<span className='colon'>: </span>{' '}
 							<span className='string'>
-								"JavaScript, React, Git, Node, Express, MongoDB, SASS"<span className='comma'>,</span>
+								"JavaScript, React, Git, Node, Express, MongoDB, SCSS, <br />
+								Adobe Photoshop, Adobe Premiere Pro, Unreal Engine 5"<span className='comma'>,</span>
 							</span>
 						</code>
 
@@ -57,24 +62,31 @@ const Home = () => {
 						<code>
 							&emsp;&emsp;
 							<span className='string'>
-								"Clean and performant code"<span className='comma'>,</span>
+								"Building exceptional applications"<span className='comma'>,</span>
 							</span>
 						</code>
 						<code>
 							&emsp;&emsp;
 							<span className='string'>
-								"Modern but thorough solutions"<span className='comma'>,</span>
+								"Creating high-quality user-experiences"<span className='comma'>,</span>
 							</span>
 						</code>
 						<code>
 							&emsp;&emsp;
 							<span className='string'>
-								"New technologies"<span className='comma'>,</span>
+								"Writing clean and performant code"<span className='comma'>,</span>
 							</span>
 						</code>
 						<code>
 							&emsp;&emsp;
-							<span className='string'>"Happy users"</span>
+							<span className='string'>
+								"Learning the latest technology"<span className='comma'>,</span>
+							</span>
+						</code>
+
+						<code>
+							&emsp;&emsp;
+							<span className='string'>"Helping others succeed"</span>
 						</code>
 						<code>&emsp;],</code>
 						<code>{'}'}</code>
@@ -137,9 +149,26 @@ const Home = () => {
 				<div className='content-container'>
 					<h2>Projects</h2>
 					<div className='projects-container'>
+						<a
+							className='project derision'
+							href='https://store.steampowered.com/app/2218950/Derision/'
+							target='_blank'
+							rel='noreferrer'>
+							<div className='project-thumb'>{/* <img src={derisionThumb} alt='Derision'></img> */}</div>
+							<h3>Derision</h3>
+							<p>A full-fledged Steam game made in Unreal Engine 5 for PC.</p>
+							<div className='skills-used'>
+								<div className='skill-used' title='Steam SDK'>
+									<img src={steamIcon} alt='Steam'></img>
+								</div>
+								<div className='skill-used' title='Unreal Engine 5'>
+									<img src={ueIcon} alt='UE5'></img>
+								</div>
+							</div>
+						</a>
 						<A className='project' href='/projects/MineralMiner'>
 							<div className='project-thumb'>
-								<img src={globalProviderThumb} alt='Mineral Miner'></img>
+								<img src={mineralMinerThumb} alt='Mineral Miner'></img>
 							</div>
 							<h3>Mineral Miner</h3>
 							<p>A Starcraft II tribute game.</p>
@@ -310,6 +339,16 @@ const Home = () => {
 							<img src={stackoverflowIcon} alt='Stack Overflow'></img>
 							<div className='details'>
 								<h5>Stack Overflow</h5>
+							</div>
+						</a>
+					</div>
+
+					<h2>Currently Hosting</h2>
+					<div className='works-container'>
+						<a className='work sj' href='https://susiejetta.com/' target='_blank' rel='noreferrer'>
+							<img src={sjIcon} alt='Susie Jetta'></img>
+							<div className='details'>
+								<h5>SusieJetta.com</h5>
 							</div>
 						</a>
 					</div>
