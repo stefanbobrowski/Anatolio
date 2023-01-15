@@ -15,7 +15,7 @@ import jsIcon from '../assets/skill-icons/javascript.svg';
 import ueIcon from '../assets/skill-icons/ue.svg';
 import steamIcon from '../assets/skill-icons/steam.png';
 import resumeIcon from '../assets/resume.svg';
-import resume from '../assets/StefanB_Resume.pdf';
+import resume from '../assets/StefanResume2023.pdf';
 import githubIcon from '../assets/social-links/github.svg';
 import stackoverflowIcon from '../assets/social-links/stackoverflow.svg';
 import linkedinIcon from '../assets/social-links/linkedin.svg';
@@ -149,7 +149,11 @@ const Home = () => {
 				<div className='content-container'>
 					<h2>Projects</h2>
 					<div className='projects-container'>
-						<a className='project derision' href='https://store.steampowered.com/app/2218950/Derision/' target='_blank'>
+						<a
+							className='project derision'
+							href='https://store.steampowered.com/app/2218950/Derision/'
+							target='_blank'
+							rel='noreferrer'>
 							<div className='project-thumb'>{/* <img src={derisionThumb} alt='Derision'></img> */}</div>
 							<h3>Derision</h3>
 							<p>A full-fledged Steam game made in Unreal Engine 5 for PC.</p>
