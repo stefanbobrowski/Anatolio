@@ -28,8 +28,8 @@ const Home = () => {
 		<div className='page home-page'>
 			<div className='page-intro'>
 				<div className='center-message'>
-					<h1>Software Engineer</h1>
-					<p>Web Developer, Game Developer... I enjoy building exceptional applications that help people.</p>
+					<h1>Web Developer</h1>
+					<p>Software Engineer, Game Developer... I enjoy building exceptional applications for the people!</p>
 				</div>
 
 				<div className='code-box'>
@@ -50,8 +50,11 @@ const Home = () => {
 							&emsp;<span className='property'>skills</span>
 							<span className='colon'>: </span>{' '}
 							<span className='string'>
-								"JavaScript, React, Git, Node, Express, MongoDB, SCSS, <br />
-								Adobe Photoshop, Adobe Premiere Pro, Unreal Engine 5"<span className='comma'>,</span>
+								"JavaScript, React, Redux Saga, GraphQL, AWS, Node.js,
+								<br />
+								Express, MongoDB, Vue, SCSS, AWS, Git, Github,
+								<br />
+								Unreal Engine 5, Premiere Pro, Photoshop"<span className='comma'>,</span>
 							</span>
 						</code>
 
