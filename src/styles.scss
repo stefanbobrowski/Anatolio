@@ -37,8 +37,8 @@ $desktop-width: 1080px;
 
 // Color
 // $main-color: #143a61;
-$main-color: #105677;
-// $main-color: #0c3f56;
+// $main-color: #105677;
+$main-color: #0073b8;
 $secondary-color: #02fc9c;
 // $secondary-color: #0073b8;
 
@@ -162,8 +162,7 @@ header#site-header {
 	width: 100%;
 	position: fixed;
 	z-index: 50;
-	background-color: rgba(darken($main-color, 10%), 0.6);
-	background-color: rgba(#0073b8, 0.8);
+	background-color: rgba($main-color, 0.8);
 
 	.header-container {
 		display: flex;
@@ -350,8 +349,7 @@ main#view {
 }
 
 .skills-section {
-	// background-color: darken($main-color, 5%);
-	background-color: #0073b8;
+	background-color: $main-color;
 
 	> .content-container {
 		padding: 1rem;
@@ -475,8 +473,8 @@ main#view {
 		}
 
 		&:hover {
-			border: 1px solid $secondary-color;
-			background-color: rgba($secondary-color, 0.1);
+			border: 1px solid $main-color;
+			// background-color: rgba($secondary-color, 0.1);
 		}
 
 		.project-thumb {
@@ -565,7 +563,7 @@ main#view {
 		}
 
 		&.resume {
-			background-color: darken($main-color, 10%);
+			background-color: darken($main-color, 15%);
 		}
 
 		&.linkedin {
