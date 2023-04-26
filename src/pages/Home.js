@@ -22,8 +22,6 @@ import linkedinIcon from '../assets/social-links/linkedin.svg';
 import sjIcon from '../assets/sj.png';
 
 const Home = () => {
-	useEffect(() => {}, []);
-
 	return (
 		<div className='page home-page'>
 			<div className='page-intro'>
