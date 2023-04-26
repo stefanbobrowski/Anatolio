@@ -28,8 +28,10 @@ const Home = () => {
 		<div className='page home-page'>
 			<div className='page-intro'>
 				<div className='center-message'>
-					<h1>Web Developer</h1>
-					<p>Software Engineer, Game Developer... I enjoy building exceptional applications for the people!</p>
+					<h1>
+						<span>Stefan Bobrowski,</span> Front End Developer
+					</h1>
+					<p>Highly skilled Front End Developer with over a decade of experience developing web applications.</p>
 				</div>
 
 				<div className='code-box'>
@@ -43,18 +45,16 @@ const Home = () => {
 							&emsp;<span className='property'>occupation</span>
 							<span className='colon'>: </span>{' '}
 							<span className='string'>
-								"Software Engineer, Web Developer, Game Developer"<span className='comma'>,</span>
+								"Front End Developer"<span className='comma'>,</span>
 							</span>
 						</code>
 						<code>
 							&emsp;<span className='property'>skills</span>
 							<span className='colon'>: </span>{' '}
 							<span className='string'>
-								"JavaScript, React, Redux Saga, GraphQL, AWS, Node.js,
-								<br />
-								Express, MongoDB, Vue, SCSS, AWS, Git, Github,
-								<br />
-								Unreal Engine 5, Premiere Pro, Photoshop"<span className='comma'>,</span>
+								"JavaScript, React, Redux Saga, Typescript, Node, Express, GraphQL, MongoDB, Docker, Apollo, Next.js,
+								Git, CSS, SASS, Figma, Jira NoSQL, REST, UI/UX, Component Design Systems, Agile/Scrum, Accessibility,
+								Server-side rendering, Micro-front ends, Web Sockets
 							</span>
 						</code>
 
@@ -65,31 +65,26 @@ const Home = () => {
 						<code>
 							&emsp;&emsp;
 							<span className='string'>
-								"Building exceptional applications"<span className='comma'>,</span>
+								"Creating streamlined user experiences"<span className='comma'>,</span>
 							</span>
 						</code>
 						<code>
 							&emsp;&emsp;
 							<span className='string'>
-								"Creating high-quality user-experiences"<span className='comma'>,</span>
+								"Writing clean, performant, and well-tested code"<span className='comma'>,</span>
 							</span>
 						</code>
 						<code>
 							&emsp;&emsp;
 							<span className='string'>
-								"Writing clean and performant code"<span className='comma'>,</span>
+								"Cutting-edge technologies"<span className='comma'>,</span>
 							</span>
 						</code>
 						<code>
 							&emsp;&emsp;
 							<span className='string'>
-								"Learning the latest technology"<span className='comma'>,</span>
+								"Providing business value"<span className='comma'>,</span>
 							</span>
-						</code>
-
-						<code>
-							&emsp;&emsp;
-							<span className='string'>"Helping others succeed"</span>
 						</code>
 						<code>&emsp;],</code>
 						<code>{'}'}</code>
@@ -98,7 +93,7 @@ const Home = () => {
 
 				<a className='resume-container' href={resume} target='_blank' rel='noreferrer'>
 					<img src={resumeIcon} title='Resume' alt='Resume'></img>
-					<p>StefanResume2023.pdf (81.3KB)</p>
+					<p>StefanResume2023.pdf (49.9KB)</p>
 				</a>
 			</div>
 
