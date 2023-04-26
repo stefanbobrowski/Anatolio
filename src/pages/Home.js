@@ -51,7 +51,7 @@ const Home = () => {
 							<span className='colon'>: </span>{' '}
 							<span className='string'>
 								"JavaScript, React, Redux Saga, Typescript, Node, Express, GraphQL, MongoDB, Docker, Apollo, Next.js,
-								Git, CSS, SASS, Figma, Jira NoSQL, REST, UI/UX, Component Design Systems, Agile/Scrum, Accessibility,
+								Git, CSS, SASS, Figma, Jira, NoSQL, REST, UI/UX, Component Design Systems, Agile/Scrum, Accessibility,
 								Server-side rendering, Micro-front ends, Web Sockets
 							</span>
 						</code>

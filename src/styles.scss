@@ -426,7 +426,7 @@ main#view {
 		justify-content: center;
 		flex: 0 0 31%;
 		border: 1px solid black;
-		padding: 1.3rem 1rem;
+		padding: 1rem;
 		margin: 1%;
 		text-align: center;
 		transition: 0.2s ease;
@@ -436,7 +436,7 @@ main#view {
 		}
 
 		@media screen and (max-width: $mobile-width) {
-			flex: 0 0 300px;
+			flex: 0 0 99%;
 			margin: 1rem auto;
 			padding: 1rem;
 		}
