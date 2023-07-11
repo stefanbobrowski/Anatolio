@@ -12,6 +12,7 @@ import mongoIcon from '../assets/skill-icons/mongodb.svg';
 import sassIcon from '../assets/skill-icons/sass.svg';
 import nodeIcon from '../assets/skill-icons/node-dot-js.svg';
 import jsIcon from '../assets/skill-icons/javascript.svg';
+import tsIcon from '../assets/skill-icons/typescript.svg';
 import ueIcon from '../assets/skill-icons/ue.svg';
 import steamIcon from '../assets/skill-icons/steam.png';
 import resumeIcon from '../assets/resume.svg';
@@ -27,35 +28,35 @@ const Home = () => {
 			<div className='page-intro'>
 				<div className='center-message'>
 					<h1>
-						<span>Stefan Bobrowski,</span> Front End Developer
+						<span>Stefan Bobrowski,</span> Front-end Developer
 					</h1>
-					<p>Highly skilled Front End Developer with over a decade of experience developing web applications.</p>
+					<p>Highly skilled Front-end Developer with over a decade of experience developing web applications.</p>
 				</div>
 
 				<div className='code-box'>
 					<pre>
 						<code>
-							<span className='const'>const </span> <span className='const-name'>Stefan </span>{' '}
+							<span className='const'>const </span> <span className='const-name'>Stefan Bobrowski </span>{' '}
 							<span className='equals'>{'= '}</span> {'{'}
 						</code>
-
 						<code>
 							&emsp;<span className='property'>occupation</span>
 							<span className='colon'>: </span>{' '}
 							<span className='string'>
-								"Front End Developer"<span className='comma'>,</span>
+								<span className='bracket'>{'['}</span>"Front-end Developer"<span className='comma'>,</span> "Software
+								Engineer"<span className='bracket'>{']'},</span>
 							</span>
 						</code>
 						<code>
 							&emsp;<span className='property'>skills</span>
 							<span className='colon'>: </span>{' '}
 							<span className='string'>
-								"JavaScript, React, Redux Saga, Typescript, Node, Express, GraphQL, MongoDB, Docker, Apollo, Next.js,
-								Git, CSS, SASS, Figma, Jira, NoSQL, REST, UI/UX, Component Design Systems, Agile/Scrum, Accessibility,
-								Server-side rendering, Micro-front ends, Web Sockets
+								"JavaScript, Typescript, React, Redux Saga, Node, Express, GraphQL, Apollo, MongoDB, Docker, Git, CSS,
+								SASS, Figma, Jira, REST, UI/UX, Component Design Systems, Agile/Scrum, Accessibility, NoSQL, Server-side
+								rendering, Micro-front ends, Web Sockets, Unit testing, Integration testing, End-to-end testing"
+								<span className='comma'>,</span>
 							</span>
 						</code>
-
 						<code>
 							&emsp;<span className='property'>interests</span>
 							<span className='colon'>: </span>[
@@ -75,7 +76,7 @@ const Home = () => {
 						<code>
 							&emsp;&emsp;
 							<span className='string'>
-								"Cutting-edge technologies"<span className='comma'>,</span>
+								"Utilizing cutting-edge technologies"<span className='comma'>,</span>
 							</span>
 						</code>
 						<code>
@@ -91,7 +92,7 @@ const Home = () => {
 
 				<a className='resume-container' href={resume} target='_blank' rel='noreferrer'>
 					<img src={resumeIcon} title='Resume' alt='Resume'></img>
-					<p>StefanResume2023.pdf (49.9KB)</p>
+					<p>StefanResume2023.pdf (50.7KB)</p>
 				</a>
 			</div>
 
@@ -104,6 +105,12 @@ const Home = () => {
 								<img src={jsIcon} alt='JavaScript'></img>
 							</div>
 							<p>JavaScript</p>
+						</div>
+						<div className='skill'>
+							<div className='skill-icon' title='TypeScript'>
+								<img src={tsIcon} alt='TypeScript'></img>
+							</div>
+							<p>TypeScript</p>
 						</div>
 						<div className='skill'>
 							<div className='skill-icon' title='React.js'>
