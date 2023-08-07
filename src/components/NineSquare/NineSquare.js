@@ -146,7 +146,7 @@ const NineSquare = () => {
 					<div className='github-icon'>
 						<img src={githubIcon} alt='Github'></img>
 					</div>
-					<span>Mineral Miner</span>
+					<span>NineSquare</span>
 				</a>
 			</div>
 		</div>

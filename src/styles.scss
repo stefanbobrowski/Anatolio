@@ -277,6 +277,10 @@ main#view {
 	background-color: #1e1e1e;
 	border-radius: 8px;
 
+	@media screen and (max-width: $tablet-width) {
+		margin: 2.3rem 0;
+	}
+
 	pre {
 		display: inline-flex;
 		flex-direction: column;
