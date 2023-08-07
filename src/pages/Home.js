@@ -108,7 +108,7 @@ const Home = () => {
 
 				<a className='resume-container' href={resume} target='_blank' rel='noreferrer'>
 					<img src={resumeIcon} title='Resume' alt='Resume'></img>
-					<p>StefanResume2023.pdf (50.7KB)</p>
+					<p>StefanResume2023.pdf (50.8KB)</p>
 				</a>
 			</div>
 
