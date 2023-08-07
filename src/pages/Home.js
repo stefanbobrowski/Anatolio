@@ -14,6 +14,7 @@ import nodeIcon from '../assets/skill-icons/node-dot-js.svg';
 import jsIcon from '../assets/skill-icons/javascript.svg';
 import tsIcon from '../assets/skill-icons/typescript.svg';
 import ueIcon from '../assets/skill-icons/ue.svg';
+import copilotIcon from '../assets/skill-icons/copilot.svg';
 import steamIcon from '../assets/skill-icons/steam.png';
 import resumeIcon from '../assets/resume.svg';
 import resume from '../assets/StefanResume2023.pdf';
@@ -36,57 +37,72 @@ const Home = () => {
 				<div className='code-box'>
 					<pre>
 						<code>
-							<span className='const'>const </span> <span className='const-name'>Stefan Bobrowski </span>{' '}
-							<span className='equals'>{'= '}</span> {'{'}
+							<span className='const'>const </span> <span className='const-name'>stefanBobrowski </span>{' '}
+							<span className='equals'>{'= '}</span> <span className='curly-bracket'>{'{'}</span>
 						</code>
 						<code>
 							&emsp;<span className='property'>occupation</span>
 							<span className='colon'>: </span>{' '}
 							<span className='string'>
-								<span className='bracket'>{'['}</span>"Front-end Developer"<span className='comma'>,</span> "Software
-								Engineer"<span className='bracket'>{']'},</span>
+								<span className='bracket'>{'['}</span>'Front-end Developer'<span className='comma'>,</span> 'Software
+								Engineer'<span className='bracket'>{']'}</span>
+								<span className='comma'>,</span>
 							</span>
 						</code>
 						<code>
 							&emsp;<span className='property'>skills</span>
 							<span className='colon'>: </span>{' '}
 							<span className='string'>
-								"JavaScript, Typescript, React, Redux Saga, Node, Express, GraphQL, Apollo, MongoDB, Docker, Git, CSS,
+								'JavaScript, Typescript, React, Redux Saga, Node, Express, GraphQL, Apollo, MongoDB, Docker, Git, CSS,
 								SASS, Figma, Jira, REST, UI/UX, Component Design Systems, Agile/Scrum, Accessibility, NoSQL, Server-side
-								rendering, Micro-front ends, Web Sockets, Unit testing, Integration testing, End-to-end testing"
+								rendering, Micro-front ends, Web Sockets, Unit testing, Integration testing, End-to-end testing, Github
+								Copilot, and more!'
 								<span className='comma'>,</span>
 							</span>
 						</code>
 						<code>
 							&emsp;<span className='property'>interests</span>
-							<span className='colon'>: </span>[
+							<span className='colon'>: </span>
+							<span className='bracket'>[</span>
 						</code>
 						<code>
 							&emsp;&emsp;
 							<span className='string'>
-								"Creating streamlined user experiences"<span className='comma'>,</span>
+								'Building scalable and accessible applications'<span className='comma'>,</span>
 							</span>
 						</code>
 						<code>
 							&emsp;&emsp;
 							<span className='string'>
-								"Writing clean, performant, and well-tested code"<span className='comma'>,</span>
+								'Creating beautiful, streamlined user experiences'<span className='comma'>,</span>
 							</span>
 						</code>
 						<code>
 							&emsp;&emsp;
 							<span className='string'>
-								"Utilizing cutting-edge technologies"<span className='comma'>,</span>
+								'Writing clean, performant, and well-tested code'<span className='comma'>,</span>
 							</span>
 						</code>
 						<code>
 							&emsp;&emsp;
 							<span className='string'>
-								"Providing business value"<span className='comma'>,</span>
+								'Leveraging AI and other cutting-edge technologies'<span className='comma'>,</span>
 							</span>
 						</code>
-						<code>&emsp;],</code>
-						<code>{'}'}</code>
+						<code>
+							&emsp;&emsp;
+							<span className='string'>
+								'Providing business value and constantly learning'<span className='comma'>,</span>
+							</span>
+						</code>
+						<code>
+							&emsp;<span className='bracket'>]</span>
+							<span className='comma'>,</span>
+						</code>
+						<code>
+							<span className='curly-bracket'>{'}'}</span>
+							<span className='semi-colon'>{';'}</span>
+						</code>
 					</pre>
 				</div>
 
@@ -99,7 +115,13 @@ const Home = () => {
 			<section className='skills-section'>
 				<div className='content-container'>
 					<div className='skills-container'>
-						<h2>Skills</h2>
+						<h2>Skills </h2>
+						<div className='skill'>
+							<div className='skill-icon' title='CoPilot'>
+								<img src={copilotIcon} alt='CoPilot'></img>
+							</div>
+							<p>Copilot</p>
+						</div>
 						<div className='skill'>
 							<div className='skill-icon' title='JavaScript'>
 								<img src={jsIcon} alt='JavaScript'></img>
@@ -152,20 +174,46 @@ const Home = () => {
 				<div className='content-container'>
 					<h2>Projects</h2>
 					<div className='projects-container'>
+						<A className='project nine-square' href='/projects/NineSquare'>
+							<div className='project-thumb'>
+								<div className='nine-square-logo'>
+									<span>9</span>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+								</div>
+							</div>
+							<h3>NineSquare</h3>
+							<p>Game I created with game theory.</p>
+							<div className='skills-used'>
+								<div className='skill-used' title='JavaScript'>
+									<img src={jsIcon} alt='JavaScript'></img>
+								</div>
+								<div className='skill-used' title='React.js'>
+									<img src={reactIcon} alt='React'></img>
+								</div>
+							</div>
+						</A>
 						<a
 							className='project derision'
 							href='https://store.steampowered.com/app/2218950/Derision/'
 							target='_blank'
 							rel='noreferrer'>
-							<div className='project-thumb'>{/* <img src={derisionThumb} alt='Derision'></img> */}</div>
+							<div className='project-thumb'></div>
 							<h3>Derision</h3>
-							<p>A full-fledged Steam game made in Unreal Engine 5 for PC.</p>
+							<p>PC game made with Unreal Engine 5. Available now on Steam.</p>
 							<div className='skills-used'>
-								<div className='skill-used' title='Steam SDK'>
-									<img src={steamIcon} alt='Steam'></img>
-								</div>
 								<div className='skill-used' title='Unreal Engine 5'>
 									<img src={ueIcon} alt='UE5'></img>
+								</div>
+								<div className='skill-used' title='Steam SDK'>
+									<img src={steamIcon} alt='Steam'></img>
 								</div>
 							</div>
 						</a>
@@ -174,7 +222,7 @@ const Home = () => {
 								<img src={mineralMinerThumb} alt='Mineral Miner'></img>
 							</div>
 							<h3>Mineral Miner</h3>
-							<p>A Starcraft II tribute game.</p>
+							<p>Starcraft II tribute game.</p>
 							<div className='skills-used'>
 								<div className='skill-used' title='React.js'>
 									<img src={reactIcon} alt='React'></img>
@@ -189,7 +237,7 @@ const Home = () => {
 								<img src={globalProviderThumb} alt='Global Provider'></img>
 							</div>
 							<h3>Global Provider</h3>
-							<p>A scalable global state management system built with useContext and useReducer.</p>
+							<p>Scalable global state management system built with useContext and useReducer. (outdated)</p>
 							<div className='skills-used'>
 								<div className='skill-used' title='React.js'>
 									<img src={reactIcon} alt='React'></img>
@@ -225,7 +273,7 @@ const Home = () => {
 							</p>
 							<div className='skills-used'>
 								<div className='skill-used'>
-									<img src={mongoIcon} alt='MongoDB'></img>
+									<img src={mongoIcon} alt='MongoDB' title='MongoDB'></img>
 								</div>
 
 								<div className='skill-used'>
@@ -249,7 +297,7 @@ const Home = () => {
 								<img src={signUpThumb} alt='Sign up'></img>
 							</div>
 							<h3>SignUp</h3>
-							<p>A full stack MERN application for signing a piece of paper. Everyone sign up!</p>
+							<p>Full-stack MERN application for signing a piece of paper. Everyone sign up!</p>
 
 							<div className='skills-used'>
 								<div className='skill-used'>
@@ -294,14 +342,10 @@ const Home = () => {
 								<img src={strawVoteThumb} alt='Straw Vote'></img>
 							</div>
 							<h3>Straw Vote</h3>
-							<p> Straw Vote is the best place to create instant, real-time votes for free. </p>
+							<p> Straw Vote is the worst place to create instant, real-time votes for free. </p>
 							<div className='skills-used'>
 								<div className='skill-used' title='React.js'>
 									<img src={reactIcon} alt='React'></img>
-								</div>
-
-								<div className='skill-used' title='Sass'>
-									<img src={sassIcon} alt='SASS'></img>
 								</div>
 							</div>
 						</A>

@@ -41,7 +41,6 @@ const ToDoList = () => {
 	});
 
 	useEffect(() => {
-		console.log('welcome to To-Do List');
 		countCompleted();
 	}, []);
 

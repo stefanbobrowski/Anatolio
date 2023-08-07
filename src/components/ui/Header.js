@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
 import { usePath } from 'hookrouter';
-import anatolioPic from '../../assets/StefanBobrowski.jpg';
+import anatolioPic from '../../assets/StefanBobrowski.png';
 import githubIcon from '../../assets/social-links/github.svg';
 import stackoverflowIcon from '../../assets/social-links/stackoverflow.svg';
 import linkedinIcon from '../../assets/social-links/linkedin.svg';
 import gmailIcon from '../../assets/social-links/gmail.svg';
+import leetcodeIcon from '../../assets/social-links/leetcode.svg';
 
 const Header = () => {
 	const path = usePath();
@@ -53,6 +54,13 @@ const Header = () => {
 						target='_blank'
 						rel='noreferrer'>
 						<img src={stackoverflowIcon} alt='Stack Overflow'></img>
+					</a>
+					<a
+						href='https://leetcode.com/StefanBobrowski/'
+						title='LeetCode - Stefan Bobrowski'
+						target='_blank'
+						rel='noreferrer'>
+						<img src={leetcodeIcon} alt='LeetCode'></img>
 					</a>
 				</nav>
 			</div>

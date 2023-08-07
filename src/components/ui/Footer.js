@@ -38,7 +38,7 @@ const Footer = () => {
 						<img src={stackoverflowIcon} alt='Stack Overflow'></img>
 					</a>
 				</nav>
-				<p className='copy'>&copy; Stefan Bobrowski 2020</p>
+				<p className='copy'>&copy; Stefan Bobrowski 2023</p>
 			</div>
 		</footer>
 	);

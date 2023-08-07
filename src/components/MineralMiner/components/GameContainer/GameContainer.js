@@ -14,7 +14,6 @@ export const GameContainer = () => {
 	const floorRef = useRef();
 
 	const handleFloorClick = (e) => {
-		console.log('hi');
 		if (e.target === e.currentTarget) {
 			dispatch({ type: 'SELECT', payload: '' });
 		}

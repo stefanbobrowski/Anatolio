@@ -12,7 +12,7 @@ import ExerciseLogs from './components/ExerciseLogs/ExerciseLogs.js';
 import SignUp from './components/SignUp/SignUp.js';
 import GlobalProvider from './components/GlobalProvider/GlobalProvider';
 import MineralMiner from './components/MineralMiner/MineralMiner';
-// import RecoilDemo from './components/RecoilDemo/index';
+import NineSquare from './components/NineSquare/NineSquare';
 
 const routes = {
 	'/': () => <Home />,
@@ -24,7 +24,7 @@ const routes = {
 	'/projects/SignUp': () => <SignUp />,
 	'/projects/GlobalProvider': () => <GlobalProvider />,
 	'/projects/MineralMiner': () => <MineralMiner />,
-	// '/projects/RecoilDemo': () => <RecoilDemo />,
+	'/projects/NineSquare': () => <NineSquare />,
 };
 
 export default routes;

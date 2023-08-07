@@ -20,7 +20,7 @@ const MineralMiner = () => {
 					href='https://github.com/stefanbobrowski/Mineral-Miner'
 					target='_blank'
 					rel='noreferrer'
-					title='Global Provider - Github'>
+					title='Mineral Miner - Github'>
 					<div className='github-icon'>
 						<img src={githubIcon} alt='Github'></img>
 					</div>
