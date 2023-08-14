@@ -1,8 +1,8 @@
 {
-	"arrowParens": "always",
-	"printWidth": 120,
-	"jsxBracketSameLine": true,
-	"jsxSingleQuote": true,
-	"singleQuote": true,
-	"useTabs": true
+  "arrowParens": "always",
+  "printWidth": 120,
+  "jsxBracketSameLine": true,
+  "jsxSingleQuote": true,
+  "singleQuote": true,
+  "useTabs": false
 }

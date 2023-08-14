@@ -6,12 +6,12 @@ import { Controller } from './Controller/Controller';
 import './PlayerInterface.scss';
 
 export const PlayerInterface = () => {
-	return (
-		<div className='player-interface'>
-			<MiniMap />
-			<Selection />
-			<Portrait />
-			<Controller />
-		</div>
-	);
+  return (
+    <div className='player-interface'>
+      <MiniMap />
+      <Selection />
+      <Portrait />
+      <Controller />
+    </div>
+  );
 };

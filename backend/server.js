@@ -16,23 +16,23 @@ app.use(cors());
 app.use(express.json());
 
 mongoose.connect(MONGODB_URI, {
-	useNewUrlParser: true,
-	useCreateIndex: true,
-	useUnifiedTopology: true,
-	useFindAndModify: false,
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false,
 });
 
 const connection = mongoose.connection;
 connection.once('open', () => {
-	console.log('Connected to MongoDB Database!');
+  console.log('Connected to MongoDB Database!');
 });
 connection.on('error', () => {
-	console.log('Mongoose Connection Error : ' + error);
+  console.log('Mongoose Connection Error : ' + error);
 });
 
 app.use('/api/exercise-logs', exercisesRouter);
 app.use('/api/sign-up', signUpRouter);
 
 app.listen(SERVER_PORT, () => {
-	console.log('Server listening on port ' + SERVER_PORT);
+  console.log('Server listening on port ' + SERVER_PORT);
 });

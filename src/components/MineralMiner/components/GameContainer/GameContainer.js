@@ -9,22 +9,22 @@ import { MineralField } from './components/MineralField/MineralField';
 import './GameContainer.scss';
 
 export const GameContainer = () => {
-	// eslint-disable-next-line no-unused-vars
-	const [state, dispatch] = useContext(Context);
-	const floorRef = useRef();
+  // eslint-disable-next-line no-unused-vars
+  const [state, dispatch] = useContext(Context);
+  const floorRef = useRef();
 
-	const handleFloorClick = (e) => {
-		if (e.target === e.currentTarget) {
-			dispatch({ type: 'SELECT', payload: '' });
-		}
-	};
+  const handleFloorClick = (e) => {
+    if (e.target === e.currentTarget) {
+      dispatch({ type: 'SELECT', payload: '' });
+    }
+  };
 
-	return (
-		<div className='game-container' ref={floorRef} onClick={handleFloorClick}>
-			<Status />
-			<MineralField />
-			<CommandCenter />
-			<PlayerInterface />
-		</div>
-	);
+  return (
+    <div className='game-container' ref={floorRef} onClick={handleFloorClick}>
+      <Status />
+      <MineralField />
+      <CommandCenter />
+      <PlayerInterface />
+    </div>
+  );
 };

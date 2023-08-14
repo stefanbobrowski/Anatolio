@@ -8,15 +8,15 @@ import PageNotFound from './pages/PageNotFound';
 import './styles.scss';
 
 const App = () => {
-	const routeResult = useRoutes(routes);
+  const routeResult = useRoutes(routes);
 
-	return (
-		<div id='App'>
-			<Header />
-			<main id='view'>{routeResult || <PageNotFound />}</main>
-			<Footer />
-		</div>
-	);
+  return (
+    <div id='App'>
+      <Header />
+      <main id='view'>{routeResult || <PageNotFound />}</main>
+      <Footer />
+    </div>
+  );
 };
 
 const rootElement = document.getElementById('root');

@@ -15,16 +15,16 @@ import MineralMiner from './components/MineralMiner/MineralMiner';
 import NineSquare from './components/NineSquare/NineSquare';
 
 const routes = {
-	'/': () => <Home />,
-	'/pagenotfound': () => <PageNotFound />,
-	'/projects/ToDoList': () => <ToDoList />,
-	'/projects/PaymentForm': () => <PaymentForm />,
-	'/projects/StrawVote': () => <StrawVote />,
-	'/projects/ExerciseLogs': () => <ExerciseLogs />,
-	'/projects/SignUp': () => <SignUp />,
-	'/projects/GlobalProvider': () => <GlobalProvider />,
-	'/projects/MineralMiner': () => <MineralMiner />,
-	'/projects/NineSquare': () => <NineSquare />,
+  '/': () => <Home />,
+  '/pagenotfound': () => <PageNotFound />,
+  '/projects/ToDoList': () => <ToDoList />,
+  '/projects/PaymentForm': () => <PaymentForm />,
+  '/projects/StrawVote': () => <StrawVote />,
+  '/projects/ExerciseLogs': () => <ExerciseLogs />,
+  '/projects/SignUp': () => <SignUp />,
+  '/projects/GlobalProvider': () => <GlobalProvider />,
+  '/projects/MineralMiner': () => <MineralMiner />,
+  '/projects/NineSquare': () => <NineSquare />,
 };
 
 export default routes;
