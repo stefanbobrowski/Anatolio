@@ -1,98 +1,98 @@
 .straw-vote-project {
-  .straw-vote-container {
-    margin: 2rem 0;
-    padding: 1rem;
-    background-color: #ddd;
-  }
-  #straw-graph {
-    position: relative;
+	.straw-vote-container {
+		margin: 2rem 0;
+		padding: 1rem;
+		background-color: #ddd;
+	}
+	#straw-graph {
+		position: relative;
 
-    // &:before {
-    //   content: "";
-    //   display: block;
-    //   height: 100%;
-    //   width: 4px;
-    //   position: absolute;
-    //   left: 60px;
-    //   top: 0px;
-    //   background-color: black;
-    // }
-    .graph-row {
-      display: flex;
-      align-items: center;
-      margin: 1rem 0rem;
+		// &:before {
+		//   content: "";
+		//   display: block;
+		//   height: 100%;
+		//   width: 4px;
+		//   position: absolute;
+		//   left: 60px;
+		//   top: 0px;
+		//   background-color: black;
+		// }
+		.graph-row {
+			display: flex;
+			align-items: center;
+			margin: 1rem 0rem;
 
-      // &:nth-of-type(n + 1) .straw {
-      //   background-color: #072083;
-      // }
+			// &:nth-of-type(n + 1) .straw {
+			//   background-color: #072083;
+			// }
 
-      // &:nth-of-type(n + 2) .straw {
-      //   background-color: #f85b1a;
-      // }
+			// &:nth-of-type(n + 2) .straw {
+			//   background-color: #f85b1a;
+			// }
 
-      // &:nth-of-type(n + 3) .straw {
-      //   background-color: #ce1ebf;
-      // }
+			// &:nth-of-type(n + 3) .straw {
+			//   background-color: #ce1ebf;
+			// }
 
-      .straw-name {
-        width: 20%;
-        padding: 5px;
-        padding-right: 1rem;
-        text-align: right;
-        word-wrap: break-word;
-        background-color: #fff;
-      }
+			.straw-name {
+				width: 20%;
+				padding: 5px;
+				padding-right: 1rem;
+				text-align: right;
+				word-wrap: break-word;
+				background-color: #fff;
+			}
 
-      .straw {
-        max-width: 80%;
-        margin-left: 1rem;
-        height: 30px;
-        border-radius: 3px;
-        border-left: 2px solid #333;
-      }
+			.straw {
+				max-width: 80%;
+				margin-left: 1rem;
+				height: 30px;
+				border-radius: 3px;
+				border-left: 2px solid #333;
+			}
 
-      .straw-votes {
-        margin-left: 4px;
-      }
-    }
-  }
+			.straw-votes {
+				margin-left: 4px;
+			}
+		}
+	}
 
-  .vote-panel {
-    display: flex;
-    align-items: flex-end;
-    margin: 20px 0px;
-    .vote-choice {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 40px;
-      margin: 0px 4px;
-      padding: 10px;
-      border: 1px solid black;
-      background-color: palegoldenrod;
+	.vote-panel {
+		display: flex;
+		align-items: flex-end;
+		margin: 20px 0px;
+		.vote-choice {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 40px;
+			margin: 0px 4px;
+			padding: 10px;
+			border: 1px solid black;
+			background-color: palegoldenrod;
 
-      &:hover {
-        cursor: pointer;
-        background-color: paleturquoise;
-      }
+			&:hover {
+				cursor: pointer;
+				background-color: paleturquoise;
+			}
 
-      &:active {
-        background-color: cadetblue;
-      }
-    }
-  }
+			&:active {
+				background-color: cadetblue;
+			}
+		}
+	}
 
-  .create-straw-vote {
-    border: 1px solid black;
-    padding: 10px;
-  }
+	.create-straw-vote {
+		border: 1px solid black;
+		padding: 10px;
+	}
 
-  .share-straw-vote {
-    display: inline-flex;
-    align-self: flex-end;
-    margin-top: 1rem;
-    margin-left: auto;
-    border: 1px solid black;
-    padding: 0.4rem;
-  }
+	.share-straw-vote {
+		display: inline-flex;
+		align-self: flex-end;
+		margin-top: 1rem;
+		margin-left: auto;
+		border: 1px solid black;
+		padding: 0.4rem;
+	}
 }

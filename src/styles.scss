@@ -162,7 +162,6 @@ header#site-header {
 	background-color: rgba($main-color, 0.9);
 	border: 1px solid #fff;
 
-
 	.header-container {
 		display: flex;
 		justify-content: space-between;
@@ -295,7 +294,8 @@ main#view {
 				color: #569cd6;
 			}
 
-			.comma, .semi-colon {
+			.comma,
+			.semi-colon {
 				color: #d4d4d4;
 			}
 
@@ -432,17 +432,17 @@ $gap-size: 0.5rem;
 
 // Responsive Grid
 @mixin responsive-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: $gap-size;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: $gap-size;
 
-  @media screen and (max-width: 768px) {
-    grid-template-columns: repeat(2, 2fr);
-  }
+	@media screen and (max-width: 768px) {
+		grid-template-columns: repeat(2, 2fr);
+	}
 
-  @media screen and (max-width: 360px) {
-    grid-template-columns: 1fr;
-  }
+	@media screen and (max-width: 360px) {
+		grid-template-columns: 1fr;
+	}
 }
 
 .projects-section {
@@ -450,7 +450,7 @@ $gap-size: 0.5rem;
 }
 
 .projects-container {
-  @include responsive-grid;
+	@include responsive-grid;
 	margin-top: 1.5rem;
 
 	.project {
@@ -556,7 +556,8 @@ $gap-size: 0.5rem;
 			background-position: 10% 50%;
 			background-repeat: no-repeat;
 
-			h3, p {
+			h3,
+			p {
 				position: relative;
 				z-index: 5;
 			}
