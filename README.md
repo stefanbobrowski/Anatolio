@@ -1,36 +1,55 @@
 # StefanBobrowski.com
 
-The personal portfolio of **Stefan Anatolio Bobrowski** — a full-stack JavaScript and React web developer focused on building scalable, secure, and cloud-native applications.
+The personal portfolio of **Stefan Anatolio Bobrowski** — a full-stack JavaScript and React web developer with over a decade of professional experience.
 
-This site showcases selected work and technical projects that demonstrate modern web development practices and deep integration with Google Cloud Platform.
-
----
-
-## 🛠️ Technology Stack Overview
-
-| Layer       | Technologies Used                                      |
-|-------------|--------------------------------------------------------|
-| Frontend    | Vite + React (TypeScript, SWC)                         |
-| Backend     | Node.js, Express                                       |
-| AI / ML     | Gemini 1.5 Pro (Text & Image), Vertex AI               |
-| Big Data    | BigQuery                                               |
-| Database    | Cloud SQL (PostgreSQL)                                 |
-| File Storage| Google Cloud Storage                                   |
-| Security    | IAM, Helmet, CORS, Rate Limiting, reCAPTCHA v3         |
-| Containerization | Docker                                            |
-| CI/CD       | GitHub Actions (Docker build & deploy)                 |
-| Hosting     | Cloud Run, Artifact Registry                           |
+This site showcases select work, technical accomplishments, and development interests, with a focus on clean UI/UX, performance, and maintainable code.
 
 ---
 
-## 👨‍💻 About the Author
+## 🔧 Tech Stack
+
+- **Frontend:** React (Create React App)
+- **Styling:** SCSS / CSS3
+- **Language:** JavaScript (ES6+)
+- **Hosting:** Nginx on Ubuntu (DigitalOcean VPS)
+
+---
+
+## 📦 Getting Started
+
+```bash
+npm install
+npm start
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+---
+
+## 🚀 Deployment
+
+The site is deployed manually using `scp` to a DigitalOcean server running Nginx. After building:
+
+```bash
+npm run build
+scp -r build/* user@your-server-ip:/var/www/html
+```
+
+Make sure your Nginx config points to `/var/www/html`.
+
+---
+
+## 👨‍💻 Author
 
 Created by [@stefanbobrowski](https://github.com/stefanbobrowski)  
-🌐 Website: [stefanbobrowski.com](https://stefanbobrowski.com)
+🌐 [stefanbobrowski.com](https://stefanbobrowski.com)
 
 ---
 
-## 📁 Full Code Repository
+## 📄 License
 
-You can explore the full source code here:  
-👉 [GitHub – Anatolio](https://github.com/stefanbobrowski/Anatolio)
+This project is licensed under the MIT License.
