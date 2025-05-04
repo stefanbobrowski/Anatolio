@@ -13,14 +13,18 @@ const Footer = () => {
           <span className='special-dot' role='img' aria-label='dot'>
             ⚪
           </span>
-          <p>Front-end Developer</p>
+          <p>Full-Stack JavaScript Developer</p>
         </div>
 
         <nav id='footer-nav'>
           <a href='mailto:stefanbobrowski1@gmail.com' title='stefanbobrowski1@gmail.com'>
             <img src={gmailIcon} alt='Gmail'></img>
           </a>
-          <a href='https://github.com/stefanbobrowski' title='Github - Stefan Bobrowski'>
+          <a
+            href='https://github.com/stefanbobrowski'
+            title='Github - Stefan Bobrowski'
+            target='_blank'
+            rel='noreferrer'>
             <img src={githubIcon} alt='Github'></img>
           </a>
           <a
@@ -38,7 +42,7 @@ const Footer = () => {
             <img src={stackoverflowIcon} alt='Stack Overflow'></img>
           </a>
         </nav>
-        <p className='copy'>&copy; Stefan Bobrowski 2023</p>
+        <p className='copy'>&copy; Stefan Bobrowski {new Date().getFullYear()}</p>
       </div>
     </footer>
   );

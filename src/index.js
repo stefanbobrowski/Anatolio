@@ -7,6 +7,12 @@ import Footer from './components/ui/Footer';
 import PageNotFound from './pages/PageNotFound';
 import './styles.scss';
 
+// Shim legacy node-style process object
+window.process = {
+  platform: 'browser',
+  env: { NODE_ENV: 'development' },
+};
+
 const App = () => {
   const routeResult = useRoutes(routes);
 

@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 .mineral-miner-project {
   position: relative;
   height: 700px;
@@ -40,7 +42,7 @@
     color: $link-color;
 
     &:hover {
-      color: lighten($link-color, 5%);
+      color: color.adjust($link-color, $lightness: 5%);
       transition: 0.3s ease;
     }
   }

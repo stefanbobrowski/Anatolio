@@ -70,7 +70,6 @@ const StrawVote = () => {
               <span className='straw-name'>{c.strawName}</span>
               <div
                 className='straw'
-                count={c.strawCount}
                 key={i}
                 style={{
                   width: (c.strawCount / totalVotes) * 50 + '%',

@@ -17,11 +17,12 @@ import ueIcon from '../assets/skill-icons/ue.svg';
 import copilotIcon from '../assets/skill-icons/copilot.svg';
 import steamIcon from '../assets/skill-icons/steam.png';
 import resumeIcon from '../assets/resume.svg';
-import resume from '../assets/StefanResume2023.pdf';
+import resume from '../assets/StefanBobrowskiResume.pdf';
 import githubIcon from '../assets/social-links/github.svg';
 import stackoverflowIcon from '../assets/social-links/stackoverflow.svg';
 import linkedinIcon from '../assets/social-links/linkedin.svg';
 import sjIcon from '../assets/sj.png';
+import googleCloudIcon from '../assets/skill-icons/google-cloud.svg';
 
 const Home = () => {
   return (
@@ -29,9 +30,12 @@ const Home = () => {
       <div className='page-intro'>
         <div className='center-message'>
           <h1>
-            <span>Stefan Bobrowski,</span> Front-end Developer
+            <span>Stefan Bobrowski,</span> Full-Stack JavaScript Developer
           </h1>
-          <p>Highly skilled Front-end Developer with over a decade of experience developing web applications.</p>
+          <p>
+            Full-stack JavaScript Developer with 10+ years of professional experience building scalable,
+            high-performance web applications.
+          </p>
         </div>
 
         <div className='code-box'>
@@ -44,8 +48,8 @@ const Home = () => {
               &emsp;<span className='property'>occupation</span>
               <span className='colon'>: </span>{' '}
               <span className='string'>
-                <span className='bracket'>{'['}</span>'Front-end Developer'<span className='comma'>,</span> 'Software
-                Engineer'<span className='bracket'>{']'}</span>
+                <span className='bracket'>{'['}</span>'Full-stack Web Developer'<span className='comma'>,</span>{' '}
+                'Software Engineer'<span className='bracket'>{']'}</span>
                 <span className='comma'>,</span>
               </span>
             </code>
@@ -53,13 +57,15 @@ const Home = () => {
               &emsp;<span className='property'>skills</span>
               <span className='colon'>: </span>{' '}
               <span className='string'>
-                'JavaScript, Typescript, React, Redux Saga, Node, Express, GraphQL, Apollo, MongoDB, Docker, Git, CSS,
-                SASS, Figma, Jira, REST, UI/UX, Component Design Systems, Agile/Scrum, Accessibility, NoSQL, Server-side
-                rendering, Micro-front ends, Web Sockets, Unit testing, Integration testing, End-to-end testing, Github
-                Copilot, and more!'
+                'Google Cloud Platform, Vertex AI, Gemini 1.5 Pro, Cloud Run, Cloud Storage, Cloud SQL, BigQuery,
+                Docker, GitHub Actions, Node.js, Express, React, Vite, TypeScript, Redux-Saga, GraphQL, Apollo, MongoDB,
+                REST, SSR, Micro-frontends, Web Sockets, Component Design Systems, Agile/Scrum, Unit Testing,
+                Integration Testing, E2E Testing, Jest, React Testing Library, SASS, Figma, Jira, Accessibility, GitHub
+                Copilot, ChatGPT'
                 <span className='comma'>,</span>
               </span>
             </code>
+
             <code>
               &emsp;<span className='property'>interests</span>
               <span className='colon'>: </span>
@@ -68,31 +74,31 @@ const Home = () => {
             <code>
               &emsp;&emsp;
               <span className='string'>
-                'Building scalable and accessible applications'<span className='comma'>,</span>
+                'Building secure, scalable cloud-native applications'<span className='comma'>,</span>
               </span>
             </code>
             <code>
               &emsp;&emsp;
               <span className='string'>
-                'Creating beautiful, streamlined user experiences'<span className='comma'>,</span>
+                'Designing intuitive, high-performance user experiences'<span className='comma'>,</span>
               </span>
             </code>
             <code>
               &emsp;&emsp;
               <span className='string'>
-                'Writing clean, performant, and well-tested code'<span className='comma'>,</span>
+                'Writing clean, testable, and maintainable code'<span className='comma'>,</span>
               </span>
             </code>
             <code>
               &emsp;&emsp;
               <span className='string'>
-                'Leveraging AI and other cutting-edge technologies'<span className='comma'>,</span>
+                'Leveraging AI and big data in full-stack workflows'<span className='comma'>,</span>
               </span>
             </code>
             <code>
               &emsp;&emsp;
               <span className='string'>
-                'Providing business value and constantly learning'<span className='comma'>,</span>
+                'Delivering business value while continually learning'<span className='comma'>,</span>
               </span>
             </code>
             <code>
@@ -106,9 +112,11 @@ const Home = () => {
           </pre>
         </div>
 
-        <a className='resume-container' href={resume} target='_blank' rel='noreferrer'>
-          <img src={resumeIcon} title='Resume' alt='Resume'></img>
-          <p>StefanResume2023.pdf (50.8KB)</p>
+        <a className='resume-container' href={resume} target='_blank' rel='noopener noreferrer'>
+          <img src={resumeIcon} title='View Resume PDF' alt='Resume icon'></img>
+          <p>
+            <strong>StefanBobrowskiResume.pdf</strong> (124 KB)
+          </p>
         </a>
       </div>
 
@@ -116,6 +124,12 @@ const Home = () => {
         <div className='content-container'>
           <div className='skills-container'>
             <h2>Skills </h2>
+            <div className='skill'>
+              <div className='skill-icon' title='Google Cloud Platform'>
+                <img src={googleCloudIcon} alt='GCP'></img>
+              </div>
+              <p>Google Cloud Platform</p>
+            </div>
             <div className='skill'>
               <div className='skill-icon' title='CoPilot'>
                 <img src={copilotIcon} alt='CoPilot'></img>
@@ -174,6 +188,37 @@ const Home = () => {
         <div className='content-container'>
           <h2>Projects</h2>
           <div className='projects-container'>
+            <a
+              className='project upload-center'
+              href='https://upload-center-177749780343.us-central1.run.app/'
+              target='_blank'
+              rel='noreferrer'>
+              <div className='project-thumb'>🌆</div>
+              <h3>Cloud Playground - Upload Center</h3>
+              <p>
+                Full-stack app for uploading and analyzing data using <strong>Google Cloud Platform </strong>
+                services + AI.
+              </p>
+              <div className='skills-used'>
+                <div className='skill-used' title='Google Cloud Platform'>
+                  <img src={googleCloudIcon} alt='Google Cloud Platform'></img>
+                </div>
+                <div className='skill-used'>
+                  <div className='express-icon' title='Express.js'>
+                    <span>ex</span>
+                  </div>
+                </div>
+                <div className='skill-used' title='Node.js'>
+                  <img src={nodeIcon} alt='Node'></img>
+                </div>
+                <div className='skill-used' title='React.js'>
+                  <img src={reactIcon} alt='React'></img>
+                </div>
+                <div className='skill-used' title='TypeScript'>
+                  <img src={tsIcon} alt='TypeScript'></img>
+                </div>
+              </div>
+            </a>
             <A className='project nine-square' href='/projects/NineSquare'>
               <div className='project-thumb'>
                 <div className='nine-square-logo'>
@@ -357,7 +402,7 @@ const Home = () => {
           <h2>Work</h2>
           <div className='works-container'>
             <a className='work resume' href={resume} target='_blank' rel='noreferrer'>
-              <img src={resumeIcon} alt='Resume'></img>
+              <img src={resumeIcon} alt='Stefan Bobrowski Resume'></img>
               <div className='details'>
                 <h5>Resume</h5>
               </div>
@@ -375,7 +420,7 @@ const Home = () => {
               rel='noreferrer'>
               <img src={linkedinIcon} alt='Linkedin'></img>
               <div className='details'>
-                <h5>Linkedin</h5>
+                <h5>LinkedIn</h5>
               </div>
             </a>
             <a
@@ -392,6 +437,18 @@ const Home = () => {
 
           <h2>Currently Hosting</h2>
           <div className='works-container'>
+            <a
+              className='work upload-center'
+              href='https://upload-center-177749780343.us-central1.run.app/'
+              target='_blank'
+              rel='noreferrer'>
+              {/* <img src={sjIcon} alt='Upload Center'></img> */}
+              <span style={{ fontSize: '4rem' }}>🌆</span>
+
+              <div className='details'>
+                <h5>Upload Center</h5>
+              </div>
+            </a>
             <a className='work sj' href='https://susiejetta.com/' target='_blank' rel='noreferrer'>
               <img src={sjIcon} alt='Susie Jetta'></img>
               <div className='details'>

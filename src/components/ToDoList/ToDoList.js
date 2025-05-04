@@ -131,7 +131,7 @@ const ToDoList = () => {
           <div className='todos'>
             {todos.map((t, i) => {
               return (
-                <div className='todo' key={i} index={i} style={{ backgroundColor: t.color }}>
+                <div className='todo' key={i} style={{ backgroundColor: t.color }}>
                   <div className='checkbox' onClick={() => handleCheck(i)}>
                     <span>{t.complete ? '✔️' : ''}</span>
                   </div>

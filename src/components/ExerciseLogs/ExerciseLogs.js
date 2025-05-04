@@ -157,7 +157,7 @@ const ExerciseLogs = () => {
 
         <div className='exercise-logs'>
           {exerciseLogs.map((ex, i) => (
-            <div className='exercise-log' key={i} index={i}>
+            <div className='exercise-log' key={i}>
               {editMode.edit && editMode.exID === ex._id ? (
                 <div className='edit-mode'>
                   <form className='edit-exercise-log'>
