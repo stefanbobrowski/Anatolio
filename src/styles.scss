@@ -38,8 +38,9 @@ $tablet-width: 768px;
 $desktop-width: 1080px;
 
 // Color
-$main-color: #0073b8;
-$secondary-color: #c7e6f9;
+// $main-color: #0073b8;
+$main-color: #009cb8;
+$secondary-color: #c7f9f6;
 
 iframe {
   display: none !important;
@@ -348,12 +349,6 @@ main#view {
   &:hover {
     border: 1px solid $secondary-color;
     background-color: rgba($main-color, 1);
-    img {
-      filter: invert(87%) sepia(11%) saturate(977%) hue-rotate(180deg) brightness(103%) contrast(95%);
-    }
-    p {
-      color: $secondary-color;
-    }
   }
 
   img {
@@ -363,8 +358,7 @@ main#view {
   }
 
   p {
-    font-size: 1rem;
-
+    font-size: 1.25rem;
     color: #fff;
   }
 
@@ -615,8 +609,6 @@ $gap-size: 0.5rem;
 
 .work-section {
   background-color: $main-color;
-  background-color: #0073b8;
-
   h2 {
     color: #fff;
   }

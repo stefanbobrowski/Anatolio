@@ -13,7 +13,7 @@ const Footer = () => {
           <span className='special-dot' role='img' aria-label='dot'>
             ⚪
           </span>
-          <p>Full-Stack JavaScript Developer</p>
+          <p>Full Stack Developer</p>
         </div>
 
         <nav id='footer-nav'>

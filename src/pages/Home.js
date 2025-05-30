@@ -30,11 +30,11 @@ const Home = () => {
       <div className='page-intro'>
         <div className='center-message'>
           <h1>
-            <span>Stefan Bobrowski,</span> Full-Stack JavaScript Developer
+            <span>Stefan Bobrowski,</span> Full Stack Developer
           </h1>
           <p>
-            Full-stack JavaScript Developer with 10+ years of professional experience building scalable,
-            high-performance web applications.
+            Full Stack Developer with 10+ years of professional experience building scalable, high-performance web
+            applications.
           </p>
         </div>
 
@@ -65,7 +65,6 @@ const Home = () => {
                 <span className='comma'>,</span>
               </span>
             </code>
-
             <code>
               &emsp;<span className='property'>interests</span>
               <span className='colon'>: </span>
@@ -114,9 +113,7 @@ const Home = () => {
 
         <a className='resume-container' href={resume} target='_blank' rel='noopener noreferrer'>
           <img src={resumeIcon} title='View Resume PDF' alt='Resume icon'></img>
-          <p>
-            <strong>StefanBobrowskiResume.pdf</strong> (124 KB)
-          </p>
+          <p>StefanBobrowskiResume.pdf (124 KB)</p>
         </a>
       </div>
 
