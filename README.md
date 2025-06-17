@@ -1,6 +1,6 @@
 # StefanBobrowski.com
 
-The personal portfolio of **Stefan Anatolio Bobrowski** — a full-stack JavaScript and React web developer with over a decade of professional experience.
+The personal portfolio of **Stefan Anatolio Bobrowski** — a Senior Front-End Developer and Full-Stack Engineer with over a decade of professional experience.
 
 This site showcases select work, technical accomplishments, and development interests, with a focus on clean UI/UX, performance, and maintainable code.
 

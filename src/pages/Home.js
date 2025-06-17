@@ -30,11 +30,13 @@ const Home = () => {
       <div className='page-intro'>
         <div className='center-message'>
           <h1>
-            <span>Stefan Bobrowski,</span> Full Stack Developer
+            <span>Stefan Bobrowski</span>
           </h1>
+          <h2>Senior Front-End Developer</h2>
+          <h2>Full-Stack Engineer</h2>
           <p>
-            Full Stack Developer with 10+ years of professional experience building scalable, high-performance web
-            applications.
+            Senior Front-End Developer and Full-Stack Engineer with over 10 years of professional experience building
+            scalable, high-performance web applications.
           </p>
         </div>
 
@@ -48,8 +50,8 @@ const Home = () => {
               &emsp;<span className='property'>occupation</span>
               <span className='colon'>: </span>{' '}
               <span className='string'>
-                <span className='bracket'>{'['}</span>'Full-stack Web Developer'<span className='comma'>,</span>{' '}
-                'Software Engineer'<span className='bracket'>{']'}</span>
+                <span className='bracket'>{'['}</span>'Senior Front-End Developer'<span className='comma'>,</span>{' '}
+                'Full-Stack Engineer'<span className='bracket'>{']'}</span>
                 <span className='comma'>,</span>
               </span>
             </code>
@@ -58,10 +60,10 @@ const Home = () => {
               <span className='colon'>: </span>{' '}
               <span className='string'>
                 'Google Cloud Platform, Vertex AI, Gemini 1.5 Pro, Cloud Run, Cloud Storage, Cloud SQL, BigQuery,
-                Docker, GitHub Actions, Node.js, Express, React, Vite, TypeScript, Redux-Saga, GraphQL, Apollo, MongoDB,
-                REST, SSR, Micro-frontends, Web Sockets, Component Design Systems, Agile/Scrum, Unit Testing,
-                Integration Testing, E2E Testing, Jest, React Testing Library, SASS, Figma, Jira, Accessibility, GitHub
-                Copilot, ChatGPT'
+                Docker, GitHub Actions, Node.js, Express, React, Vite, JavaScript, TypeScript, Redux-Saga, GraphQL,
+                Apollo, MongoDB, REST, SSR, Micro-frontends, Web Sockets, Component Design Systems, Agile/Scrum, Unit
+                Testing, Integration Testing, E2E Testing, Jest, React Testing Library, SASS, Figma, Jira,
+                Accessibility, GitHub Copilot, ChatGPT'
                 <span className='comma'>,</span>
               </span>
             </code>
@@ -113,7 +115,7 @@ const Home = () => {
 
         <a className='resume-container' href={resume} target='_blank' rel='noopener noreferrer'>
           <img src={resumeIcon} title='View Resume PDF' alt='Resume icon'></img>
-          <p>StefanBobrowskiResume.pdf (124 KB)</p>
+          <p>StefanBobrowskiResume.pdf (131 KB)</p>
         </a>
       </div>
 
