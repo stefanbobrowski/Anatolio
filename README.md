@@ -45,7 +45,7 @@ Make sure your Nginx config points to `/var/www/html`.
 
 ## 👨‍💻 Author
 
-Created by [@stefanbobrowski](https://github.com/stefanbobrowski)  
+Created by [@stefanbobrowski](https://github.com/stefanbobrowski/Anatolio)  
 🌐 [stefanbobrowski.com](https://stefanbobrowski.com)
 
 ---

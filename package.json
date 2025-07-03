@@ -1,7 +1,7 @@
 {
   "name": "anatolio",
   "version": "1.0.0",
-  "description": "Stefan Anatolio Bobrowski - JavaScript Web Developer",
+  "description": "Stefan Anatolio Bobrowski - JavaScript Full Stack Web Developer",
   "homepage": "https://stefanbobrowski.com",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,11 @@
     "web developer",
     "coding",
     "programming",
-    "react"
+    "react",
+    "fullstack",
+    "frontend",
+    "backend",
+    "web development"
   ],
   "author": "Stefan Anatolio Bobroswki",
   "license": "MIT",

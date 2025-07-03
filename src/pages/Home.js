@@ -60,10 +60,10 @@ const Home = () => {
               <span className='colon'>: </span>{' '}
               <span className='string'>
                 'Google Cloud Platform, Vertex AI, Gemini 1.5 Pro, Cloud Run, Cloud Storage, Cloud SQL, BigQuery,
-                Docker, GitHub Actions, Node.js, Express, React, Vite, JavaScript, TypeScript, Redux-Saga, GraphQL,
-                Apollo, MongoDB, REST, SSR, Micro-frontends, Web Sockets, Component Design Systems, Agile/Scrum, Unit
-                Testing, Integration Testing, E2E Testing, Jest, React Testing Library, SASS, Figma, Jira,
-                Accessibility, GitHub Copilot, ChatGPT'
+                Postgres, CI/CD, Kubernetes, Docker, GitHub Actions, Node.js, Express, React, Vite, JavaScript,
+                TypeScript, Redux-Saga, GraphQL, Apollo, MongoDB, REST, SSR, Micro-frontends, Web Sockets, Component
+                Design Systems, Agile/Scrum, Unit Testing, Integration Testing, E2E Testing, Jest, React Testing
+                Library, SASS, Figma, Jira, Accessibility, GitHub Copilot, ChatGPT'
                 <span className='comma'>,</span>
               </span>
             </code>
@@ -197,6 +197,37 @@ const Home = () => {
               <p>
                 Full-stack app for uploading and analyzing data using <strong>Google Cloud Platform </strong>
                 services + AI.
+              </p>
+              <div className='skills-used'>
+                <div className='skill-used' title='Google Cloud Platform'>
+                  <img src={googleCloudIcon} alt='Google Cloud Platform'></img>
+                </div>
+                <div className='skill-used'>
+                  <div className='express-icon' title='Express.js'>
+                    <span>ex</span>
+                  </div>
+                </div>
+                <div className='skill-used' title='Node.js'>
+                  <img src={nodeIcon} alt='Node'></img>
+                </div>
+                <div className='skill-used' title='React.js'>
+                  <img src={reactIcon} alt='React'></img>
+                </div>
+                <div className='skill-used' title='TypeScript'>
+                  <img src={tsIcon} alt='TypeScript'></img>
+                </div>
+              </div>
+            </a>
+            <a
+              className='project upload-center'
+              href='https://gglist-frontend-177352903615.us-central1.run.app/'
+              target='_blank'
+              rel='noreferrer'>
+              <div className='project-thumb gglist'>ggList</div>
+              <h3>ggList - Favorite Pokemon</h3>
+              <p>
+                Full-stack app for tracking and ranking user favorites. Users log in with Google, favorite up to 10
+                items, and see a leaderboard of top picks across all users.
               </p>
               <div className='skills-used'>
                 <div className='skill-used' title='Google Cloud Platform'>
@@ -441,11 +472,21 @@ const Home = () => {
               href='https://upload-center-177749780343.us-central1.run.app/'
               target='_blank'
               rel='noreferrer'>
-              {/* <img src={sjIcon} alt='Upload Center'></img> */}
               <span style={{ fontSize: '4rem' }}>🌆</span>
 
               <div className='details'>
                 <h5>Upload Center</h5>
+              </div>
+            </a>
+            <a
+              className='work gglist'
+              href='https://gglist-frontend-177352903615.us-central1.run.app/'
+              target='_blank'
+              rel='noreferrer'>
+              <span>ggList</span>
+
+              <div className='details'>
+                <h5>ggList</h5>
               </div>
             </a>
             <a className='work sj' href='https://susiejetta.com/' target='_blank' rel='noreferrer'>
