@@ -489,10 +489,10 @@ const Home = () => {
                 <h5>ggList</h5>
               </div>
             </a>
-            <a className='work sj' href='https://susiejetta.com/' target='_blank' rel='noreferrer'>
+            <a className='work sj' href='https://susie-jetta.com/' target='_blank' rel='noreferrer'>
               <img src={sjIcon} alt='Susie Jetta'></img>
               <div className='details'>
-                <h5>SusieJetta.com</h5>
+                <h5>Susie-Jetta.com</h5>
               </div>
             </a>
           </div>
